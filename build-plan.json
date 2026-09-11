@@ -196,13 +196,29 @@
     }
   },
   "design": {
-    "fonts": {},
-    "notes": "",
+    "fonts": {
+      "heading": "Bricolage Grotesque",
+      "body": "Figtree",
+      "accent": "Barlow Condensed"
+    },
+    "notes": "Warm earth tones, natural greens and amber accent",
     "style": "modern",
     "colors": {
+      "primary": "#2e6b3e",
+      "secondary": "#3a2f27",
+      "accent": "#e0a72c",
       "extracted_from_logo": true
     },
-    "logo_analysis": {}
+    "logo_analysis": {
+      "aspect_ratio": 0.46,
+      "type": "stacked",
+      "dominant_colors": [
+        "#2e6b3e",
+        "#e0a72c",
+        "#3a2f27"
+      ]
+    },
+    "archetype": "warm-human"
   },
   "domain": "green-limb-tree-service",
   "phases": [
@@ -317,7 +333,7 @@
           "q": "What's the best time to remove a tree?"
         },
         {
-          "a": "Stump grinding pricing depends on size and location accessibility. We provide free estimates on-site. Most residential stumps in Greensboro run $150–$400.",
+          "a": "Stump grinding pricing depends on size and location accessibility. We provide free estimates on-site. Most residential stumps in Greensboro run $150\u2013$400.",
           "q": "How much does stump grinding cost?"
         },
         {
@@ -325,7 +341,7 @@
           "q": "Are your arborists insured and licensed?"
         }
       ],
-      "about_angle": "Local tree experts who combine 20+ years of Greensboro-area experience with ISA certifications. We're not just removing trees—we're diagnosing problems, preventing damage, and preserving the mature canopy that makes Greensboro neighborhoods beautiful.",
+      "about_angle": "Local tree experts who combine 20+ years of Greensboro-area experience with ISA certifications. We're not just removing trees\u2014we're diagnosing problems, preventing damage, and preserving the mature canopy that makes Greensboro neighborhoods beautiful.",
       "hero_headline": "Expert Tree Care for Greensboro Homes & Businesses",
       "differentiators": [
         "ISA Certified Arborists on staff for expert care and diagnostics",
@@ -334,8 +350,8 @@
         "Full-service (pruning, removal, stump grinding, health treatments) reduces customer coordination",
         "Free detailed written estimates with photography and 5-year care plans"
       ],
-      "hero_subheadline": "ISA-certified arborists providing emergency removal, health treatments, and preventive care—same-day response available",
-      "tone_recommendation": "Professional yet approachable—authoritative enough to build trust with homeowners concerned about safety and tree health, but conversational enough to feel like a local neighbor who genuinely cares about Greensboro's urban forest. Avoid jargon without losing credibility; explain arboricultural concepts simply."
+      "hero_subheadline": "ISA-certified arborists providing emergency removal, health treatments, and preventive care\u2014same-day response available",
+      "tone_recommendation": "Professional yet approachable\u2014authoritative enough to build trust with homeowners concerned about safety and tree health, but conversational enough to feel like a local neighbor who genuinely cares about Greensboro's urban forest. Avoid jargon without losing credibility; explain arboricultural concepts simply."
     },
     "competitors": [],
     "generated_at": "2026-09-11T22:49:40.932Z",
