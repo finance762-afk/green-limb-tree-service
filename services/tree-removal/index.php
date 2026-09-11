@@ -95,7 +95,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <style>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.css'; ?>
 /* Tree Removal — page-specific accents */
-.sp-removal .pull-quote { color: #fff; }
+.sp-removal .pull-quote { color: var(--color-white); }
 .sp-removal .sp-expert-figure { background: color-mix(in srgb, var(--color-primary) 8%, var(--color-surface)); }
 </style>
 
