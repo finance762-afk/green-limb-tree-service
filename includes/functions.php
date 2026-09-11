@@ -2,139 +2,216 @@
 /**
  * includes/functions.php — Helper functions for Green Limb Tree Service.
  *
- * Loaded by config.php. Provides utilities for navigation, schema generation,
- * SEO helpers, and inline SVG icons. Do not emit HTML from this file.
+ * Loaded by config.php before any output. Provides page-detection, schema generation,
+ * SEO helpers, and formatting utilities that templates use.
  */
 
 /**
- * Check if a given page is the current active page.
+ * Check if current page matches the given slug (for active nav states).
  *
- * @param  string $page  The page slug to check (e.g., 'home', 'services', 'about')
- * @return bool          True if current page matches, false otherwise
+ * @param string $page  Page slug to test against (e.g., 'home', 'about', 'services')
+ * @return bool         True if on this page
  */
 function isActivePage($page) {
-    global $currentPage;
-    return isset($currentPage) && $currentPage === $page;
+    $currentPath = trim($_SERVER['REQUEST_URI'], '/');
+
+    if ($page === 'home') {
+        return empty($currentPath) || $currentPath === 'index.php';
+    }
+
+    return strpos($currentPath, $page) === 0;
 }
 
 /**
- * Format phone number for tel: link (strips formatting).
+ * Format phone number for display.
+ * Converts raw digits to (XXX) XXX-XXXX format.
  *
- * @param  string $phone  Formatted phone number
- * @return string         E.164 style digits (e.g., '+13362547993')
+ * @param string $phone  Raw phone number (e.g., '13362547993')
+ * @return string        Formatted phone (e.g., '(336) 254-7993')
  */
 function formatPhone($phone) {
-    return '+1' . preg_replace('/[^0-9]/', '', $phone);
+    $clean = preg_replace('/[^0-9]/', '', $phone);
+
+    if (strlen($clean) === 11 && substr($clean, 0, 1) === '1') {
+        $clean = substr($clean, 1);
+    }
+
+    if (strlen($clean) === 10) {
+        return '(' . substr($clean, 0, 3) . ') ' . substr($clean, 3, 3) . '-' . substr($clean, 6, 4);
+    }
+
+    return $phone;
 }
 
 /**
- * Generate URL-safe slug from service/area name.
+ * Convert service name to URL slug.
  *
- * @param  string $name  Service or area name
- * @return string        URL-safe slug
+ * @param string $name  Service name (e.g., 'Tree Removal')
+ * @return string       URL slug (e.g., 'tree-removal')
  */
 function getServiceSlug($name) {
     return strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $name), '-'));
 }
 
+/**
+ * Convert city/area name to URL slug.
+ *
+ * @param string $city  City name (e.g., 'High Point NC')
+ * @return string       URL slug (e.g., 'high-point-nc')
+ */
 function getAreaSlug($city) {
     return strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $city), '-'));
 }
 
 /**
- * Generate LocalBusiness or Service JSON-LD schema.
+ * Generate LocalBusiness JSON-LD schema for homepage.
+ * Uses global config.php variables.
  *
- * @param  array  $service  Service array from config.php (name, description, keywords)
- * @return string           JSON-LD script tag
+ * @global string $siteName
+ * @global string $siteUrl
+ * @global string $phone
+ * @global string $email
+ * @global array  $address
+ * @global bool   $addressPublic
+ * @global string $businessHours
+ * @global string $googleBusinessProfile
+ * @global array  $geo
+ * @global array  $services
+ * @return string  JSON-LD script tag
  */
-function generateServiceSchema($service) {
-    global $siteName, $siteUrl, $phone, $address, $geo;
+function generateLocalBusinessSchema() {
+    global $siteName, $siteUrl, $phone, $email, $address, $addressPublic, $businessHours, $googleBusinessProfile, $geo, $services;
+
+    // Build postal address (omit street if address_public is false)
+    $postalAddress = [
+        '@type' => 'PostalAddress',
+        'addressLocality' => $address['city'],
+        'addressRegion' => $address['state'],
+        'postalCode' => $address['zip'],
+        'addressCountry' => 'US'
+    ];
+
+    if ($addressPublic) {
+        $postalAddress['streetAddress'] = $address['street'];
+    }
+
+    // Service offerings
+    $serviceList = array_map(function($svc) {
+        return $svc['name'];
+    }, $services);
 
     $schema = [
         '@context' => 'https://schema.org',
-        '@type'    => 'Service',
-        '@id'      => $siteUrl . '/services/' . $service['slug'] . '/#service',
-        'name'     => $service['name'],
-        'description' => $service['description'],
-        'provider' => [
-            '@id' => $siteUrl . '/#organization'
+        '@type' => 'TreeCareService',
+        '@id' => $siteUrl . '#organization',
+        'name' => $siteName,
+        'url' => $siteUrl,
+        'telephone' => $phone,
+        'email' => $email,
+        'address' => $postalAddress,
+        'geo' => [
+            '@type' => 'GeoCoordinates',
+            'latitude' => $geo['lat'],
+            'longitude' => $geo['lng']
         ],
+        'hasMap' => $googleBusinessProfile,
+        'openingHours' => 'Mo-Sa 00:00-24:00',
+        'description' => 'Family-owned tree care company providing professional tree removal, trimming, pruning, and emergency storm cleanup services in Greensboro, NC and surrounding areas.',
         'areaServed' => [
             '@type' => 'City',
-            'name'  => $address['city'],
+            'name' => $address['city'] . ', ' . $address['state']
         ],
-        'serviceType' => $service['name']
+        'priceRange' => '$$',
+        'image' => $siteUrl . '/assets/images/logo-mark.png'
     ];
 
-    return '<script type="application/ld+json">' . "\n" . json_encode($schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . "\n" . '</script>';
+    if (!empty($serviceList)) {
+        $schema['knowsAbout'] = $serviceList;
+    }
+
+    return '<script type="application/ld+json">' . "\n" . json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . "\n" . '</script>';
 }
 
 /**
- * Generate FAQPage JSON-LD schema.
+ * Generate BreadcrumbList schema for inner pages.
  *
- * @param  array  $faqs  Array of FAQ items with 'q' and 'a' keys
+ * @param array $crumbs  Array of ['name' => 'Label', 'url' => '/path/'] arrays
  * @return string        JSON-LD script tag
  */
-function generateFAQSchema($faqs) {
+function generateBreadcrumbSchema($crumbs) {
     global $siteUrl;
 
-    $mainEntity = [];
+    $items = [];
+    foreach ($crumbs as $index => $crumb) {
+        $items[] = [
+            '@type' => 'ListItem',
+            'position' => $index + 1,
+            'name' => $crumb['name'],
+            'item' => $siteUrl . $crumb['url']
+        ];
+    }
+
+    $schema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'BreadcrumbList',
+        'itemListElement' => $items
+    ];
+
+    return '<script type="application/ld+json">' . "\n" . json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . "\n" . '</script>';
+}
+
+/**
+ * Generate FAQPage schema from FAQ array.
+ *
+ * @param array $faqs  Array of ['q' => 'Question?', 'a' => 'Answer.'] arrays
+ * @return string      JSON-LD script tag
+ */
+function generateFAQSchema($faqs) {
+    $questions = [];
     foreach ($faqs as $faq) {
-        $mainEntity[] = [
+        $questions[] = [
             '@type' => 'Question',
-            'name'  => $faq['q'],
+            'name' => $faq['q'],
             'acceptedAnswer' => [
                 '@type' => 'Answer',
-                'text'  => $faq['a']
+                'text' => $faq['a']
             ]
         ];
     }
 
     $schema = [
-        '@context'   => 'https://schema.org',
-        '@type'      => 'FAQPage',
-        'mainEntity' => $mainEntity
+        '@context' => 'https://schema.org',
+        '@type' => 'FAQPage',
+        'mainEntity' => $questions
     ];
 
-    return '<script type="application/ld+json">' . "\n" . json_encode($schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . "\n" . '</script>';
+    return '<script type="application/ld+json">' . "\n" . json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . "\n" . '</script>';
 }
 
 /**
- * Generate meta tags for SEO (title, description, canonical).
+ * Generate Service schema for individual service pages.
  *
- * @param  string $title       Page title
- * @param  string $description Meta description
- * @param  string $canonical   Canonical URL
- * @return string              HTML meta tags
+ * @param string $serviceName  Service name (e.g., 'Tree Removal')
+ * @param string $description  Service description
+ * @return string              JSON-LD script tag
  */
-function generateMetaTags($title, $description, $canonical) {
-    $tags = '';
-    $tags .= '<title>' . htmlspecialchars($title) . '</title>' . "\n";
-    $tags .= '<meta name="description" content="' . htmlspecialchars($description) . '">' . "\n";
-    $tags .= '<link rel="canonical" href="' . htmlspecialchars($canonical) . '">';
+function generateServiceSchema($serviceName, $description) {
+    global $siteName, $siteUrl, $address;
 
-    return $tags;
-}
+    $schema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'Service',
+        'serviceType' => $serviceName,
+        'name' => $serviceName . ' in ' . $address['city'] . ', ' . $address['state'],
+        'description' => $description,
+        'provider' => [
+            '@id' => $siteUrl . '#organization'
+        ],
+        'areaServed' => [
+            '@type' => 'City',
+            'name' => $address['city'] . ', ' . $address['state']
+        ]
+    ];
 
-/**
- * Inline SVG icon from references/lucide-icons.
- * v6.2 — NO runtime injection; paste SVG at build time.
- *
- * @param  string $name  Icon name (matches filename without .svg)
- * @param  int    $size  Width/height in pixels (default 24)
- * @return string        Inline SVG markup
- */
-function icon($name, $size = 24) {
-    $iconPath = $_SERVER['DOCUMENT_ROOT'] . '/../crm/references/lucide-icons/' . $name . '.svg';
-
-    if (!file_exists($iconPath)) {
-        return '<!-- Icon not found: ' . htmlspecialchars($name) . ' -->';
-    }
-
-    $svg = file_get_contents($iconPath);
-
-    // Add aria-hidden and size attributes
-    $svg = str_replace('<svg', '<svg aria-hidden="true" width="' . $size . '" height="' . $size . '"', $svg);
-
-    return $svg;
+    return '<script type="application/ld+json">' . "\n" . json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . "\n" . '</script>';
 }
