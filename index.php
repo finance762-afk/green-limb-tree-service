@@ -139,9 +139,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
    framework.css owns the component library; this styles the page's layout.
    ============================================================================ */
 
-/* Hero: give the visual column its own object framing + a lower-left tag */
-.gl-hero-tag { position: absolute; left: 1rem; bottom: 1rem; z-index: 2; }
-@media (max-width: 900px) { .gl-hero-tag { position: static; margin-top: var(--space-3); } }
+/* Hero: keep the framework's clean top-right "Recent work" tag. Cancel the
+   stray insets so the tag box does not stretch across the visual (the framework
+   rule .hero-visual .photo-stack__tag already sets top/right). */
+.hero-visual .photo-stack__tag.gl-hero-tag { left: auto; bottom: auto; z-index: 2; }
+@media (max-width: 900px) { .hero-visual .photo-stack__tag.gl-hero-tag { position: static; inset: auto; transform: none; margin-top: var(--space-3); } }
 
 /* Ticker items: leaf-mark separators inherit the accent face from framework */
 .gl-ticker svg { color: var(--color-accent-dark); width: 16px; height: 16px; }
