@@ -1,0 +1,72 @@
+/* ============================================================================
+   service-page.css — shared editorial composition for /services/<slug>/ pages.
+   Inlined into each service page's <style> (framework.css is locked). Token-only:
+   every color/space/shadow is a var() from framework.css. Each page adds its own
+   small page-specific block after this include for per-service differentiation.
+   ============================================================================ */
+
+/* Hero: keep the form column readable on the dark interior hero */
+.sp-hero .breadcrumb { color: rgba(255,255,255,.7); }
+.sp-hero .breadcrumb a:hover { color: #fff; }
+.sp-hero .hero-copy { max-width: 40rem; }
+
+/* — Problem statement: pull-quote beside telltale-sign cards — */
+.sp-problem-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.sp-problem-grid .pull-quote { max-width: 20ch; }
+.sp-problem-lead { margin-top: var(--space-4); color: var(--color-ink-2); max-width: 42ch; }
+.sp-signs { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.sp-sign { background: var(--color-surface); border: 1px solid var(--color-line); border-radius: var(--radius-lg); padding: 1.15rem 1.2rem; display: grid; gap: .45rem; box-shadow: var(--shadow-sm); }
+.sp-sign__icon { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; color: var(--color-accent-dark); background: color-mix(in srgb, var(--color-accent) 14%, white); }
+.sp-sign__icon svg { width: 22px; height: 22px; }
+.sp-sign h3 { font-size: 1rem; }
+.sp-sign p { margin: 0; font-size: .9rem; color: var(--color-ink-2); }
+@media (max-width: 900px) { .sp-problem-grid { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .sp-signs { grid-template-columns: 1fr; } }
+
+/* — Expert positioning: big stat + evidence-backed differentiators — */
+.sp-expert-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.sp-expert-figure { display: grid; gap: .4rem; padding: 1.75rem; border-radius: var(--radius-lg); background: var(--color-paper-2); border: 1px solid var(--color-line); }
+.sp-expert-figure .big-number { font-size: clamp(2.6rem, 6vw, 3.8rem); }
+.sp-expert-figure p { margin: 0; color: var(--color-ink-2); }
+.sp-diffs { display: grid; gap: 1rem; margin: var(--space-4) 0 0; padding: 0; list-style: none; }
+.sp-diff { display: grid; grid-template-columns: 44px 1fr; gap: .2rem .9rem; align-items: start; }
+.sp-diff__icon { grid-row: span 2; width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; color: var(--color-primary); background: color-mix(in srgb, var(--color-primary) 12%, white); }
+.sp-diff__icon svg { width: 24px; height: 24px; }
+.sp-diff b { font-family: var(--font-heading); font-size: 1.02rem; }
+.sp-diff span { color: var(--color-ink-2); font-size: .92rem; }
+@media (max-width: 900px) { .sp-expert-grid { grid-template-columns: 1fr; } }
+
+/* — Service breakdown: what's included checklist beside a framed photo — */
+.sp-breakdown-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.sp-include-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem 1.5rem; margin: var(--space-4) 0 0; padding: 0; list-style: none; }
+.sp-include-grid li { position: relative; padding-left: 1.9rem; font-size: .94rem; color: var(--color-ink-2); line-height: 1.4; }
+.sp-include-grid svg { position: absolute; left: 0; top: 1px; width: 20px; height: 20px; color: var(--color-primary); }
+.sp-breakdown-media { position: relative; }
+.sp-breakdown-media .about-image-primary { aspect-ratio: 4 / 3.4; }
+.sp-breakdown-media .about-image-primary img,
+.sp-breakdown-media .about-image-primary picture { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) { .sp-breakdown-grid { grid-template-columns: 1fr; } .sp-include-grid { grid-template-columns: 1fr; } }
+
+/* — Comparison: "typical crew" vs Green Limb — */
+.sp-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: var(--space-4); }
+.sp-compare-col { border: 1px solid var(--color-line); border-radius: var(--radius-lg); padding: clamp(1.25rem, 3vw, 1.85rem); background: var(--color-surface); }
+.sp-compare-col--them { background: var(--color-paper-2); }
+.sp-compare-col--us { border-color: color-mix(in srgb, var(--color-primary) 45%, var(--color-line)); box-shadow: var(--shadow); }
+.sp-compare-col h3 { font-size: 1.15rem; display: flex; align-items: center; gap: .5rem; margin-bottom: var(--space-3); }
+.sp-compare-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .7rem; }
+.sp-compare-col li { position: relative; padding-left: 1.8rem; font-size: .93rem; color: var(--color-ink-2); line-height: 1.4; }
+.sp-compare-col li svg { position: absolute; left: 0; top: 1px; width: 20px; height: 20px; }
+.sp-compare-col--them li svg { color: var(--color-muted); }
+.sp-compare-col--us li svg { color: var(--color-primary); }
+.sp-compare-tag { font-family: var(--font-accent); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--color-accent-dark); }
+@media (max-width: 700px) { .sp-compare { grid-template-columns: 1fr; } }
+
+/* — Recent work strip heading room — */
+.sp-gallery .section-head { margin-bottom: clamp(1.25rem, 3vw, 2rem); }
+
+/* — Final CTA band — */
+.sp-final .container { position: relative; z-index: 1; }
+.sp-final .floating-ring { top: -90px; right: -70px; opacity: .1; }
+.sp-final-points { display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; margin: var(--space-4) 0 0; padding: 0; list-style: none; }
+.sp-final-points li { display: inline-flex; align-items: center; gap: .5rem; font-family: var(--font-accent); letter-spacing: .06em; text-transform: uppercase; font-size: var(--fs-small); color: color-mix(in srgb, var(--color-white) 90%, transparent); }
+.sp-final-points svg { width: 18px; height: 18px; color: var(--color-accent-bright); }
