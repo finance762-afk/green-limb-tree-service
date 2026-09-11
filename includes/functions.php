@@ -189,6 +189,37 @@ function generateFAQSchema($faqs) {
 }
 
 /**
+ * Render a responsive <picture> for an on-disk /assets/images/ photo.
+ *
+ * The build pipeline pre-generates -480/-960/-1600 .avif and .webp variants for
+ * every manifest photo. This emits an AVIF <source> first, then a WebP <img>
+ * fallback with srcset — the v6.3 image standard. Colors/animation are untouched.
+ *
+ * @param string $base    Photo basename without extension (e.g. '1000001503')
+ * @param string $alt     Descriptive alt text
+ * @param int    $width   Intrinsic width attribute (CLS guard)
+ * @param int    $height  Intrinsic height attribute (CLS guard)
+ * @param string $sizes   The `sizes` attribute
+ * @param array  $opts    ['eager'=>bool] hero LCP image (eager + fetchpriority); default lazy
+ * @return string         <picture> HTML
+ */
+function renderPicture($base, $alt, $width, $height, $sizes, $opts = []) {
+    $eager = !empty($opts['eager']);
+    $dir   = '/assets/images/';
+    $avif  = $dir . $base . '-480.avif 480w, ' . $dir . $base . '-960.avif 960w, ' . $dir . $base . '-1600.avif 1600w';
+    $webp  = $dir . $base . '-480.webp 480w, ' . $dir . $base . '-960.webp 960w, ' . $dir . $base . '-1600.webp 1600w';
+    $loading = $eager ? 'eager' : 'lazy';
+    $priority = $eager ? ' fetchpriority="high"' : ' decoding="async"';
+
+    return '<picture>'
+        . '<source type="image/avif" srcset="' . $avif . '" sizes="' . htmlspecialchars($sizes) . '">'
+        . '<img src="' . $dir . $base . '.jpg" srcset="' . $webp . '" sizes="' . htmlspecialchars($sizes) . '"'
+        . ' alt="' . htmlspecialchars($alt) . '" width="' . (int)$width . '" height="' . (int)$height . '"'
+        . ' loading="' . $loading . '"' . $priority . '>'
+        . '</picture>';
+}
+
+/**
  * Generate Service schema for individual service pages.
  *
  * @param string $serviceName  Service name (e.g., 'Tree Removal')
