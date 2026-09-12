@@ -5,7 +5,6 @@
  */
 $pageTitle       = 'When Should You Prune Trees in North Carolina?';
 $pageDescription = 'Most North Carolina trees should be pruned in late winter (January–early March) while dormant. Timing varies by species — oaks carry disease risks when pruned in spring and summer.';
-$canonicalUrl    = $siteUrl . '/blog/when-to-prune-trees-in-north-carolina/';
 $currentPage     = 'blog';
 
 $postDate        = 'September 12, 2026';
@@ -21,7 +20,7 @@ $schemaMarkup = json_encode([
             '@id'              => $siteUrl . '/blog/when-to-prune-trees-in-north-carolina/#article',
             'headline'         => 'When Should You Prune Trees in North Carolina?',
             'description'      => $pageDescription,
-            'image'            => $siteUrl . '/assets/images/1000000129-960.webp',
+            'image'            => $siteUrl . '/assets/images/bucket-truck-tree-trimming-960.webp',
             'datePublished'    => '2026-09-12',
             'dateModified'     => '2026-09-12',
             'author'           => [
@@ -78,6 +77,8 @@ $schemaMarkup = json_encode([
 ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+$canonicalUrl    = $siteUrl . '/blog/when-to-prune-trees-in-north-carolina/';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
@@ -198,7 +199,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <meta itemprop="headline"      content="When Should You Prune Trees in North Carolina?">
   <meta itemprop="datePublished" content="<?php echo $postDateISO; ?>">
   <meta itemprop="author"        content="<?php echo htmlspecialchars($postAuthor); ?>">
-  <meta itemprop="image"         content="<?php echo $siteUrl; ?>/assets/images/1000000129-960.webp">
+  <meta itemprop="image"         content="<?php echo $siteUrl; ?>/assets/images/bucket-truck-tree-trimming-960.webp">
 
   <div class="container">
     <div class="article-layout">
@@ -213,12 +214,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <!-- Featured image -->
         <picture>
-          <source type="image/avif" srcset="/assets/images/1000000129-480.avif 480w, /assets/images/1000000129-960.avif 960w, /assets/images/1000000129-1600.avif 1600w">
+          <source type="image/avif" srcset="/assets/images/bucket-truck-tree-trimming-480.avif 480w, /assets/images/bucket-truck-tree-trimming-960.avif 960w">
           <img
-            src="/assets/images/1000000129-960.webp"
-            srcset="/assets/images/1000000129-480.webp 480w, /assets/images/1000000129-960.webp 960w, /assets/images/1000000129-1600.webp 1600w"
+            src="/assets/images/bucket-truck-tree-trimming-960.webp"
+            srcset="/assets/images/bucket-truck-tree-trimming-480.webp 480w, /assets/images/bucket-truck-tree-trimming-960.webp 960w"
             sizes="(max-width: 768px) 100vw, 780px"
-            alt="Professional arborist from Green Limb Tree Service pruning a large hardwood tree from a bucket truck in late winter — demonstrating proper dormant-season pruning technique in Greensboro, NC"
+            alt="Green Limb Tree Service crew trimming a tall tree from a bucket truck over a Greensboro yard"
             class="article-featured-img"
             width="1600"
             height="1000"
@@ -229,7 +230,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <!-- AEO Answer Block -->
         <div class="answer-block">
           <h3>The direct answer: Late winter (January–early March) is the best pruning window for most NC trees.</h3>
-          <p>Dormant-season pruning minimizes stress, allows clear visibility of tree structure without leaves, and avoids attracting disease-spreading insects. Timing varies by species — oaks should only be pruned November through March to avoid oak wilt, while flowering trees are often pruned right after bloom. Green Limb Tree Service, a licensed tree care provider in Greensboro, NC, schedules <a href="/services/tree-pruning/">professional pruning</a> based on species and client goals.</p>
+          <p>Dormant-season pruning minimizes stress, allows clear visibility of tree structure without leaves, and avoids attracting disease-spreading insects. Timing varies by species — oaks should only be pruned November through March to avoid oak wilt, while flowering trees are often pruned right after bloom. Green Limb Tree Service, an insured, family-owned tree care provider in Greensboro, NC, schedules <a href="/services/tree-pruning/">professional pruning</a> based on species and client goals.</p>
         </div>
 
         <p>
@@ -388,6 +389,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div><!-- /.article-layout -->
   </div><!-- /.container -->
 </article>
+
+<?php $ctaBandId = 'cta-band'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
+
+
 
 <?php if (!empty($schemaMarkup)): ?>
 <script type="application/ld+json"><?php echo $schemaMarkup; ?></script>

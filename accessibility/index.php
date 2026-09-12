@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $pageTitle       = "Accessibility Statement | $siteName";
 $pageDescription = "Our commitment to ensuring digital accessibility for people with disabilities. WCAG 2.1 Level AA conformance information.";
 $canonicalUrl    = $siteUrl . '/accessibility/';
-$ogImage         = $siteUrl . '/assets/images/logo.png';
+$ogImage         = $siteUrl . '/assets/images/logo-v2.png';
 $currentPage     = 'accessibility';
 $pageType        = 'other';
 

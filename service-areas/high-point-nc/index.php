@@ -61,7 +61,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           </a>
         </div>
         <ul class="hero-chips">
-          <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>Licensed & insured</li>
+          <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>Fully insured</li>
           <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m6.8 6.8-2.9-2.9"/><path d="M2 12h4"/><path d="M12 22a8 8 0 0 0 0-16"/></svg>Same-day estimates</li>
           <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Storm response 24/7</li>
         </ul>
@@ -147,7 +147,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>High Point sits in the path of the same ice storms and summer squall lines that hit Greensboro. We respond same-day when a tree comes down on a house or blocks a driveway, and we offer scheduled maintenance—deadwood removal, clearance cuts, and structural pruning—to reduce the chance of failure before the next storm.</p>
       </div>
       <div class="sp-split-image">
-        <?php echo renderPicture('1000005749', 'Tree work in progress in a High Point NC neighborhood', 600, 400, '(min-width: 768px) 50vw, 100vw', []); ?>
+        <?php echo renderPicture('crane-removal-two-story', 'Bucket truck removing a tree beside a two-story Greensboro home', 600, 400, '(min-width: 768px) 50vw, 100vw', []); ?>
       </div>
     </div>
   </div>

@@ -148,7 +148,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>We've worked throughout Pleasant Garden—Steeple Chase, along US-421, and on wooded lots off Pleasant Garden Road. Based in Greensboro, Green Limb Tree Service is minutes away when you need tree work in southern Guilford County.</p>
       </div>
       <div class="sp-split-image">
-        <?php echo renderPicture('1000005749', 'Tree work in progress in a Guilford County neighborhood', 600, 400, '(min-width: 768px) 50vw, 100vw', []); ?>
+        <?php echo renderPicture('spider-lift-tree-pruning', 'Spider lift positioned for pruning in a Greensboro tree canopy', 600, 400, '(min-width: 768px) 50vw, 100vw', []); ?>
       </div>
     </div>
   </div>

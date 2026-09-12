@@ -52,7 +52,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
    ============================================================================ */
 
 /* Hero: interior compact pattern */
-.contact-hero { padding-block: clamp(3rem, 8vw, 5rem); background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); color: var(--color-white); position: relative; overflow: hidden; }
+.contact-hero { padding: calc(var(--nav-height) + clamp(2rem, 5vw, 3.5rem)) 0 clamp(2.5rem, 6vw, 4rem); background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); color: var(--color-white); position: relative; overflow: hidden; }
 .contact-hero::before { content: ''; position: absolute; inset: 0; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><filter id="n"><feTurbulence baseFrequency=".9" numOctaves="3"/></filter><rect width="100" height="100" filter="url(%23n)" opacity=".05"/></svg>'); opacity: .4; mix-blend-mode: overlay; }
 .contact-hero .container { position: relative; z-index: 1; max-width: var(--max-width); }
 .contact-hero h1 { color: var(--color-white); }

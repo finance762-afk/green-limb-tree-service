@@ -52,7 +52,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
    ============================================================================ */
 
 /* Hero: interior compact pattern */
-.about-hero { padding-block: clamp(3rem, 8vw, 5rem); }
+.about-hero { padding: calc(var(--nav-height) + clamp(2rem, 5vw, 3.5rem)) 0 clamp(2.5rem, 6vw, 4rem); }
 .about-hero .container { max-width: var(--max-width); }
 .about-hero-lead { font-size: var(--fs-lead); color: var(--color-ink-2); margin-top: var(--space-3); max-width: 60ch; }
 
@@ -102,7 +102,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="story-grid">
 
             <div class="story-copy reveal-left">
-                <h2>Local tree experts who combine Greensboro experience with ISA certifications</h2>
+                <h2>Local tree experts who know how Greensboro trees grow — and fail</h2>
                 <p>The Piedmont's mix of towering willow oaks, loblolly pines, and ice-loaded winters is hard on trees. We know how these species fail, when they're safe to work, and how to take one down cleanly between a house and a fence line.</p>
                 <p>Owner <strong>Woan Y</strong> started Green Limb Tree Service to bring honest, skilled tree care to Greensboro homeowners and businesses. We're not just removing trees — we're diagnosing problems, preventing damage, and preserving the mature canopy that makes Greensboro neighborhoods beautiful.</p>
                 <p>Every crew member is trained in rigging and climbing safety, and we carry full liability insurance on every job. From a single dead limb to an entire lot clearing, we scope it, price it fairly, and leave the site clean.</p>
@@ -110,7 +110,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 <div class="credentials-row">
                     <span class="credential-badge">
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
-                        Licensed &amp; Insured
+                        Fully Insured
                     </span>
                     <span class="credential-badge">
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -124,7 +124,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             </div>
 
             <div class="story-media reveal-right">
-                <?php echo renderPicture('1000001917', 'Green Limb Tree Service crew working from a spider lift beside a Greensboro home', 720, 900, '(max-width: 900px) 100vw, 460px'); ?>
+                <?php echo renderPicture('lift-tall-oak-takedown', 'Spider lift taking down a tall oak on a Greensboro property', 720, 900, '(max-width: 900px) 100vw, 460px'); ?>
                 <div class="story-stat">
                     <b>Same Day</b>
                     <span>Emergency call-outs</span>
@@ -135,13 +135,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
 </section>
 
+<?php $ctaBandId = 'cta-band'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
+
 <!-- ═══════════════════════ VALUES ═══════════════════════ -->
 <section class="section section--light" aria-label="Our values">
     <div class="container">
         <div class="section-head reveal-up">
             <span class="eyebrow-label">Why Choose Us</span>
             <h2>What sets Green Limb Tree Service apart</h2>
-            <p>We bring deep Piedmont ecology knowledge, ISA-level expertise, and a family-business commitment to every job.</p>
+            <p>We bring hands-on knowledge of Piedmont trees, careful rigging, and a family-business commitment to every job.</p>
         </div>
 
         <div class="values-grid">

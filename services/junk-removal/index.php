@@ -43,22 +43,22 @@ $faqs = [
 /* Related services shown in the "Other Services" grid (never the current page) */
 $otherServices = [
     [
-        'name' => 'Land Clearing', 'slug' => 'land-clearing', 'photo' => '1000001648', 'tint' => 1,
-        'alt'  => 'Cleared and graded lot after land clearing work near Greensboro',
+        'name' => 'Land Clearing', 'slug' => 'land-clearing', 'photo' => 'land-clearing-lot-graded', 'tint' => 1,
+        'alt'  => 'Residential lot cleared and graded by Green Limb Tree Service',
         'desc' => 'Clearing brush and trees for new construction or overgrown lots.',
         'bullets' => ['Lots & overgrown acreage', 'Brush & tree clearing', 'Site graded and ready'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M6.36 17.4 4 17l-2-4 1.1-.55a2 2 0 0 1 1.8 0l.17.1a2 2 0 0 0 1.8 0L8 12 5 6l.9-.45a2 2 0 0 1 2.09.2l4.02 3a2 2 0 0 0 2.1.2l4.19-2.06a2.41 2.41 0 0 1 1.73-.17L21 7a1.4 1.4 0 0 1 .87 1.99l-.38.76c-.23.46-.6.84-1.07 1.08L7.58 17.2a2 2 0 0 1-1.22.18Z"/></svg>',
     ],
     [
-        'name' => 'Storm Work', 'slug' => 'storm-work', 'photo' => '1000001533', 'tint' => 2,
-        'alt'  => 'Green Limb crew clearing a large fallen tree after a storm in Greensboro',
+        'name' => 'Storm Work', 'slug' => 'storm-work', 'photo' => 'storm-fallen-pine', 'tint' => 2,
+        'alt'  => 'Storm-fallen pine cut into sections on a Greensboro property',
         'desc' => 'Same-day help when a tree comes down on your home or drive.',
         'bullets' => ['24/7 emergency call-out', 'Trees off homes & drives', 'Full debris cleanup'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>',
     ],
     [
-        'name' => 'Stump Grinding', 'slug' => 'stump-grinding', 'photo' => '1000000569', 'tint' => 3,
-        'alt'  => 'Ground stump and mulch after grinding on a Greensboro lawn',
+        'name' => 'Stump Grinding', 'slug' => 'stump-grinding', 'photo' => 'stump-grinding-fresh-cut', 'tint' => 3,
+        'alt'  => 'Fresh-cut stump ready for grinding in a Greensboro yard',
         'desc' => 'Grind the leftover stump below grade and reclaim the lawn.',
         'bullets' => ['Ground below grade', 'Removes trip hazards', 'Chips raked or hauled'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>',
@@ -254,7 +254,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
       <div class="sp-breakdown-media reveal-right">
         <div class="about-image-primary">
-          <?php echo renderPicture('1000005749', 'Green Limb Tree Service crew loading brush and debris onto a flatbed truck in Greensboro', 720, 620, '(max-width: 900px) 100vw, 460px'); ?>
+          <?php echo renderPicture('log-trailer-haul-away', 'Trailer loaded with logs for haul-away after a Green Limb removal', 720, 620, '(max-width: 900px) 100vw, 460px'); ?>
         </div>
       </div>
     </div>
@@ -338,15 +338,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
     <div class="sp-gallery-grid" data-p1-dynamic>
       <figure class="sp-gallery-item reveal-scale">
-        <?php echo renderPicture('1000005749', 'Green Limb Tree Service crew loading brush and debris onto a flatbed truck in Greensboro', 760, 900, '(max-width: 700px) 100vw, 55vw'); ?>
+        <?php echo renderPicture('crew-truck-log-haul', 'Green Limb truck and trailer hauling cut logs from a Greensboro job', 760, 900, '(max-width: 700px) 100vw, 55vw'); ?>
         <figcaption>Flatbed loaded with brush and cut wood from a Greensboro property</figcaption>
       </figure>
       <figure class="sp-gallery-item reveal-scale reveal-delay-1">
-        <?php echo renderPicture('1000001648', 'Cleared and graded lot after debris and brush removal near Greensboro', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
+        <?php echo renderPicture('cleared-front-yard', 'Front yard raked clean after a Green Limb tree removal in Greensboro', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
         <figcaption>Lot cleared of brush and clutter, ready to use again</figcaption>
       </figure>
       <figure class="sp-gallery-item reveal-scale reveal-delay-2">
-        <?php echo renderPicture('1000001533', 'Crew hauling storm debris off a Piedmont property', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
+        <?php echo renderPicture('chip-truck-crew-jobsite', 'Green Limb chip truck and crew staged at a Greensboro job site', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
         <figcaption>Storm debris hauled off the same day it came down</figcaption>
       </figure>
     </div>

@@ -147,7 +147,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>We've worked throughout the Friendship Church Road corridor and along NC-150, clearing land for expansions, removing hazard trees before they fail, and grinding stumps so lawns can be reclaimed. If you're in Brown Summit or anywhere in northeast Guilford County, Green Limb Tree Service offers free on-site estimates and same-day emergency response.</p>
       </div>
       <div class="sp-split-image">
-        <?php echo renderPicture('1000001917', 'Tree removal equipment on a wooded property in rural Guilford County', 600, 400, '(min-width: 768px) 50vw, 100vw', []); ?>
+        <?php echo renderPicture('spider-lift-crew-lawn', 'Compact spider lift set up on a Greensboro lawn for a tree removal', 600, 400, '(min-width: 768px) 50vw, 100vw', []); ?>
       </div>
     </div>
   </div>

@@ -5,10 +5,11 @@
  */
 $pageTitle       = 'Tree Care Blog | Green Limb Tree Service | Greensboro, NC';
 $pageDescription = 'Expert tree care tips, seasonal pruning guides, and cost breakdowns from Green Limb Tree Service — Greensboro\'s family-owned tree service since 2019.';
-$canonicalUrl    = $siteUrl . '/blog/';
 $currentPage     = 'blog';
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+$canonicalUrl    = $siteUrl . '/blog/';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 $schemaMarkup = json_encode([
@@ -163,7 +164,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div><!-- /.blog-grid -->
     <?php else: ?>
     <div class="blog-empty">
-      <p>New articles coming soon. Check back for tree care tips and expert guidance from our team.</p>
+      <p>Check back regularly for tree care tips and expert guidance from our team.</p>
     </div>
     <?php endif; ?>
 

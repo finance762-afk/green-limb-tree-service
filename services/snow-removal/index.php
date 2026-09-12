@@ -43,22 +43,22 @@ $faqs = [
 /* Related services shown in the "Other Services" grid (never the current page) */
 $otherServices = [
     [
-        'name' => 'Storm Work', 'slug' => 'storm-work', 'photo' => '1000001533', 'tint' => 1,
-        'alt'  => 'Green Limb crew clearing a large fallen tree after a storm in Greensboro',
+        'name' => 'Storm Work', 'slug' => 'storm-work', 'photo' => 'storm-fallen-pine', 'tint' => 1,
+        'alt'  => 'Storm-fallen pine cut into sections on a Greensboro property',
         'desc' => 'Same-day help when a tree comes down on your home or drive.',
         'bullets' => ['24/7 emergency call-out', 'Trees off homes & drives', 'Full debris cleanup'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>',
     ],
     [
-        'name' => 'Tree Service', 'slug' => 'tree-service', 'photo' => '1000001917', 'tint' => 2,
-        'alt'  => 'Green Limb crew member working in a tree canopy on a Greensboro property',
+        'name' => 'Tree Service', 'slug' => 'tree-service', 'photo' => 'lift-tall-oak-takedown', 'tint' => 2,
+        'alt'  => 'Spider lift taking down a tall oak on a Greensboro property',
         'desc' => 'Full-service tree care beyond the storm — pruning, removal & health.',
         'bullets' => ['Removal, trimming & pruning', 'Year-round canopy care', 'One crew, every visit'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v0a6 6 0 0 1-6 6 6 6 0 0 1-6-6"/></svg>',
     ],
     [
-        'name' => 'Junk Removal', 'slug' => 'junk-removal', 'photo' => '1000005749', 'tint' => 3,
-        'alt'  => 'Yard debris and brush pile loaded for haul-off in Greensboro',
+        'name' => 'Junk Removal', 'slug' => 'junk-removal', 'photo' => 'log-trailer-haul-away', 'tint' => 3,
+        'alt'  => 'Trailer loaded with logs for haul-away after a Green Limb removal',
         'desc' => 'Storm brush, old limbs & yard clutter hauled off in one trip.',
         'bullets' => ['Brush & debris hauled', 'Clears storm leftovers', 'One-visit cleanup'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>',
@@ -254,7 +254,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
       <div class="sp-breakdown-media reveal-right">
         <div class="about-image-primary">
-          <?php echo renderPicture('1000001648', 'Green Limb Tree Service equipment staged and ready for winter storm-access calls in Greensboro', 720, 620, '(max-width: 900px) 100vw, 460px'); ?>
+          <?php echo renderPicture('bucket-truck-winter-removal', 'Bucket truck removal of a bare winter tree in Greensboro', 720, 620, '(max-width: 900px) 100vw, 460px'); ?>
         </div>
       </div>
     </div>
@@ -338,15 +338,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
     <div class="sp-gallery-grid" data-p1-dynamic>
       <figure class="sp-gallery-item reveal-scale">
-        <?php echo renderPicture('1000001648', 'Green Limb Tree Service equipment staged for on-call winter access work in Greensboro', 760, 900, '(max-width: 700px) 100vw, 55vw'); ?>
+        <?php echo renderPicture('crew-truck-log-haul', 'Green Limb truck and trailer hauling cut logs from a Greensboro job', 760, 900, '(max-width: 700px) 100vw, 55vw'); ?>
         <figcaption>Equipment staged and ready for on-call winter response (no snow shown)</figcaption>
       </figure>
       <figure class="sp-gallery-item reveal-scale reveal-delay-1">
-        <?php echo renderPicture('1000001503', 'Green Limb crew clearing a hazard tree beside a Greensboro home', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
+        <?php echo renderPicture('chip-truck-fleet', 'Green Limb chip truck and crew on a residential job site', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
         <figcaption>The same crew that clears ice-downed limbs after a winter storm</figcaption>
       </figure>
       <figure class="sp-gallery-item reveal-scale reveal-delay-2">
-        <?php echo renderPicture('1000001533', 'Green Limb crew clearing a large fallen tree after a Piedmont storm', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
+        <?php echo renderPicture('cleared-front-yard', 'Front yard raked clean after a Green Limb tree removal in Greensboro', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
         <figcaption>Storm-response work &mdash; the same team on call for winter access clearing</figcaption>
       </figure>
     </div>

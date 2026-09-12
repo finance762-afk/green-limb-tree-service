@@ -1,12 +1,13 @@
 <!-- Skip to main content (accessibility) -->
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<header class="site-header" data-header>
+<header class="site-header site-header--dark" data-header>
     <nav class="navbar" aria-label="Main navigation">
         <div class="navbar-inner container">
             <!-- Logo -->
             <a href="/" class="site-logo" aria-label="<?php echo htmlspecialchars($siteName); ?> Home">
-                <img src="/assets/images/logo-mark.png" alt="<?php echo htmlspecialchars($siteName); ?>" width="108" height="108">
+                <img src="/assets/images/logo-mark-v2.png" alt="<?php echo htmlspecialchars($siteName); ?>" width="95" height="88">
+                <span class="logo-text" aria-hidden="true"><span class="logo-name">Green Limb</span><span class="logo-tagline">Tree Service &middot; Greensboro</span></span>
             </a>
 
             <!-- Desktop Navigation -->
@@ -59,11 +60,11 @@
 
             <!-- Desktop CTA -->
             <div class="navbar-cta">
-                <a href="tel:<?php echo formatPhone($phone); ?>" class="nav-phone">
+                <a href="tel:<?php echo formatPhone($phone); ?>" class="btn navbar-phone btn-outline-white">
                     <svg aria-hidden="true" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
                     <?php echo htmlspecialchars($phone); ?>
                 </a>
-                <a href="#estimate" class="btn btn-primary">Free Estimate</a>
+                <a href="#estimate" class="btn btn-accent">Free Estimate</a>
             </div>
 
             <!-- Mobile Hamburger -->

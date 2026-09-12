@@ -6,13 +6,13 @@
             <div class="footer-grid">
                 <!-- Column 1: About / Logo -->
                 <div class="footer-col">
-                    <img src="/assets/images/logo-mark.png" alt="<?php echo htmlspecialchars($siteName); ?>" class="footer-logo" width="80" height="80">
+                    <img src="/assets/images/logo-mark-v2.png" alt="<?php echo htmlspecialchars($siteName); ?>" class="footer-logo" width="80" height="80">
                     <p class="footer-tagline"><?php echo htmlspecialchars($tagline); ?></p>
                     <p class="footer-desc">Professional tree care services serving <?php echo htmlspecialchars($address['city']); ?> and surrounding areas. Expert tree removal, trimming, pruning, and emergency storm cleanup.</p>
 
                     <!-- Trust badges -->
                     <div class="footer-badges">
-                        <span class="badge">Licensed & Insured</span>
+                        <span class="badge">Fully Insured</span>
                         <span class="badge">24/7 Emergency Service</span>
                         <span class="badge">Free Estimates</span>
                     </div>
@@ -120,7 +120,7 @@
                     <?php echo htmlspecialchars($address['city']); ?>, <?php echo htmlspecialchars($address['state']); ?>.
                     We provide expert tree removal, tree trimming, tree pruning, stump grinding, land clearing, and emergency storm cleanup
                     throughout <?php echo htmlspecialchars($address['city']); ?> and surrounding areas.
-                    Our licensed arborists deliver safe, reliable tree care services with a focus on customer satisfaction and environmental stewardship.
+                    Our insured crews deliver safe, reliable tree care services with a focus on customer satisfaction and environmental stewardship.
                 </p>
             </div>
         </div>
@@ -235,8 +235,8 @@
 </button>
 
 <!-- Scripts (v6.3 — ALL defer) -->
-<script src="/assets/js/main.js" defer></script>
-<script src="/assets/js/animations.js" defer></script>
+<script src="/assets/js/main.js?v=<?php echo $cssVersion; ?>" defer></script>
+<script src="/assets/js/animations.js?v=<?php echo $cssVersion; ?>" defer></script>
 
 <!-- Back-to-top inline script -->
 <script>

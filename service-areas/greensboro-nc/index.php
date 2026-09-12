@@ -146,7 +146,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>Green Limb Tree Service offers preventive care—crown-lift trimming to clear structures, deadwood removal to reduce failure risk, and cabling when a split trunk is worth saving. We work with Greensboro homeowners who want to keep mature trees healthy and with homeowners whose trees are already past saving.</p>
       </div>
       <div class="sp-split-image">
-        <?php echo renderPicture('1000001503', 'Green Limb Tree Service crew working on a large tree in a Greensboro neighborhood', 600, 400, '(min-width: 768px) 50vw, 100vw', []); ?>
+        <?php echo renderPicture('lift-roadside-removal', 'Roadside tree removal with a spider lift in the Piedmont Triad', 600, 400, '(min-width: 768px) 50vw, 100vw', []); ?>
       </div>
     </div>
   </div>

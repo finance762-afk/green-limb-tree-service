@@ -43,22 +43,22 @@ $faqs = [
 /* Related services shown in the "Other Services" grid (never the current page) */
 $otherServices = [
     [
-        'name' => 'Tree Removal', 'slug' => 'tree-removal', 'photo' => '1000000569', 'tint' => 1,
-        'alt'  => 'Green Limb Tree Service crew sectioning a hazardous tree down beside a Greensboro home',
+        'name' => 'Tree Removal', 'slug' => 'tree-removal', 'photo' => 'crane-removal-two-story', 'tint' => 1,
+        'alt'  => 'Bucket truck removing a tree beside a two-story Greensboro home',
         'desc' => 'Already know a tree has to come down? We handle the takedown safely.',
         'bullets' => ['Hazard & dead tree takedowns', 'Rigging near homes & lines', 'Debris hauled same day'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/></svg>',
     ],
     [
-        'name' => 'Tree Trimming', 'slug' => 'tree-trimming', 'photo' => '1000000129', 'tint' => 2,
-        'alt'  => 'Large canopy tree being trimmed from a bucket truck over a Greensboro back yard',
+        'name' => 'Tree Trimming', 'slug' => 'tree-trimming', 'photo' => 'bucket-truck-tree-trimming', 'tint' => 2,
+        'alt'  => 'Green Limb bucket truck crew trimming a tall tree over a Greensboro yard',
         'desc' => 'Keep healthy trees healthy with routine shaping and clearance.',
         'bullets' => ['Clears roofs & power lines', 'Improves shape & sun access', 'Reduces limb-failure risk'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>',
     ],
     [
-        'name' => 'Stump Grinding', 'slug' => 'stump-grinding', 'photo' => '1000001503', 'tint' => 3,
-        'alt'  => 'Stump being ground below grade on a Greensboro property',
+        'name' => 'Stump Grinding', 'slug' => 'stump-grinding', 'photo' => 'stump-grinding-fresh-cut', 'tint' => 3,
+        'alt'  => 'Fresh-cut stump ready for grinding in a Greensboro yard',
         'desc' => 'Grind the leftover stump and get the yard back to usable space.',
         'bullets' => ['Ground below grade', 'Removes trip hazards', 'Chips raked or hauled'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>',
@@ -255,7 +255,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
       <div class="sp-breakdown-media reveal-right">
         <div class="about-image-primary">
-          <?php echo renderPicture('1000001917', 'Green Limb Tree Service crew working a tall shade tree from a bucket lift in Greensboro', 720, 620, '(max-width: 900px) 100vw, 460px'); ?>
+          <?php echo renderPicture('lift-tall-oak-takedown', 'Spider lift taking down a tall oak on a Greensboro property', 720, 620, '(max-width: 900px) 100vw, 460px'); ?>
         </div>
       </div>
     </div>
@@ -339,15 +339,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
     <div class="sp-gallery-grid" data-p1-dynamic>
       <figure class="sp-gallery-item reveal-scale">
-        <?php echo renderPicture('1000001917', 'Bucket-truck crew working a mature shade tree above a Greensboro yard', 760, 900, '(max-width: 700px) 100vw, 55vw'); ?>
+        <?php echo renderPicture('spider-lift-crew-lawn', 'Compact spider lift set up on a Greensboro lawn for a tree removal', 760, 900, '(max-width: 700px) 100vw, 55vw'); ?>
         <figcaption>Bucket-truck crew shaping a mature shade tree</figcaption>
       </figure>
       <figure class="sp-gallery-item reveal-scale reveal-delay-1">
-        <?php echo renderPicture('1000001503', 'Hazard tree removed beside a Greensboro home', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
+        <?php echo renderPicture('bucket-truck-tree-trimming', 'Green Limb bucket truck crew trimming a tall tree over a Greensboro yard', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
         <figcaption>Hazard tree removed beside a Greensboro home</figcaption>
       </figure>
       <figure class="sp-gallery-item reveal-scale reveal-delay-2">
-        <?php echo renderPicture('1000000129', 'Canopy trimmed back from rooflines and power lines on a Greensboro property', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
+        <?php echo renderPicture('crew-large-trunk-rigging', 'Green Limb crew rigging a large trunk section for a controlled drop', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
         <figcaption>Canopy trimmed clear of rooflines and power lines</figcaption>
       </figure>
     </div>

@@ -15,64 +15,64 @@ $canonicalUrl    = $siteUrl . '/services/';
    icons come from the client manifest; tints rotate 1→2→3. */
 $listServices = [
     [
-        'name' => 'Tree Service', 'slug' => 'tree-service', 'photo' => '1000001917', 'tint' => 1, 'featured' => true,
-        'alt'  => 'Green Limb crew working a large shade tree from a tracked lift beside a Greensboro home',
+        'name' => 'Tree Service', 'slug' => 'tree-service', 'photo' => 'lift-tall-oak-takedown', 'tint' => 1, 'featured' => true,
+        'alt'  => 'Spider lift taking down a tall oak on a Greensboro property',
         'desc' => 'Full-service tree care for Greensboro homes and businesses, start to finish.',
         'bullets' => ['Pruning to full removals', 'Residential & commercial', 'Site raked clean after'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/></svg>',
     ],
     [
-        'name' => 'Tree Removal', 'slug' => 'tree-removal', 'photo' => '1000000569', 'tint' => 2,
-        'alt'  => 'Dead standing tree being sectioned down with a bucket truck on a Greensboro property',
+        'name' => 'Tree Removal', 'slug' => 'tree-removal', 'photo' => 'crane-removal-two-story', 'tint' => 2,
+        'alt'  => 'Bucket truck removing a tree beside a two-story Greensboro home',
         'desc' => 'Safe takedown of hazardous, dead, or overgrown trees near structures.',
         'bullets' => ['Careful rigging near homes', 'Dead & storm-weakened trees', 'Debris hauled away'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/><path d="M14 6a6 6 0 0 1 6 6v3"/><path d="M4 15v-3a6 6 0 0 1 6-6"/><rect x="2" y="15" width="20" height="4" rx="1"/></svg>',
     ],
     [
-        'name' => 'Tree Trimming', 'slug' => 'tree-trimming', 'photo' => '1000000129', 'tint' => 3,
-        'alt'  => 'Large canopy tree being trimmed from a bucket truck over a Greensboro back yard',
+        'name' => 'Tree Trimming', 'slug' => 'tree-trimming', 'photo' => 'bucket-truck-tree-trimming', 'tint' => 3,
+        'alt'  => 'Green Limb bucket truck crew trimming a tall tree over a Greensboro yard',
         'desc' => 'Trimming that clears roofs and lines while keeping trees balanced.',
         'bullets' => ['Clears roofs & power lines', 'Improves light and shape', 'Reduces limb-failure risk'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>',
     ],
     [
-        'name' => 'Tree Pruning', 'slug' => 'tree-pruning', 'photo' => '1000001917', 'tint' => 1,
-        'alt'  => 'Arborist pruning the upper canopy of a mature tree from an aerial lift in Greensboro',
+        'name' => 'Tree Pruning', 'slug' => 'tree-pruning', 'photo' => 'spider-lift-tree-pruning', 'tint' => 1,
+        'alt'  => 'Spider lift positioned for pruning in a Greensboro tree canopy',
         'desc' => 'Structural and health pruning timed to the season for stronger trees.',
         'bullets' => ['Dormant-season timing', 'Removes weak, crossing limbs', 'Extends the life of oaks'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg>',
     ],
     [
-        'name' => 'Land Clearing', 'slug' => 'land-clearing', 'photo' => '1000001648', 'tint' => 2,
-        'alt'  => 'Skid steer and bucket truck clearing a lot of trees and brush in the Greensboro area',
+        'name' => 'Land Clearing', 'slug' => 'land-clearing', 'photo' => 'land-clearing-lot-graded', 'tint' => 2,
+        'alt'  => 'Residential lot cleared and graded by Green Limb Tree Service',
         'desc' => 'Lot and brush clearing for builds, expansions, and reclaiming land.',
         'bullets' => ['New-construction lots', 'Brush & undergrowth', 'Grapple + skid-steer crew'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 11 11 .9a1 1 0 0 1 .8 1.1l-.665 4.158a1 1 0 0 1-.988.842H20"/><path d="M16 18h-5"/><path d="M18 5a1 1 0 0 0-1 1v5.573"/><path d="M3 4h8.129a1 1 0 0 1 .99.863L13 11.246"/><path d="M4 11V4"/><path d="M7 15h.01"/><path d="M8 10.1V4"/><circle cx="18" cy="18" r="2"/><circle cx="7" cy="15" r="5"/></svg>',
     ],
     [
-        'name' => 'Storm Work', 'slug' => 'storm-work', 'photo' => '1000001533', 'tint' => 3,
-        'alt'  => 'Green Limb crew cutting up a large fallen tree after a storm in a Greensboro yard',
+        'name' => 'Storm Work', 'slug' => 'storm-work', 'photo' => 'storm-fallen-pine', 'tint' => 3,
+        'alt'  => 'Storm-fallen pine cut into sections on a Greensboro property',
         'desc' => 'Same-day response for fallen trees and storm-damaged limbs.',
         'bullets' => ['24/7 emergency call-out', 'Trees off homes & drives', 'Full debris cleanup'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>',
     ],
     [
-        'name' => 'Junk Removal', 'slug' => 'junk-removal', 'photo' => '1000005749', 'tint' => 1,
-        'alt'  => 'Flatbed truck loaded with cut hardwood logs hauled off a Greensboro job site',
+        'name' => 'Junk Removal', 'slug' => 'junk-removal', 'photo' => 'log-trailer-haul-away', 'tint' => 1,
+        'alt'  => 'Trailer loaded with logs for haul-away after a Green Limb removal',
         'desc' => 'Hauling and disposal of yard debris, brush piles, and log wood.',
         'bullets' => ['Brush piles & log wood', 'Post-storm cleanup hauls', 'Left clean and hauled off'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>',
     ],
     [
-        'name' => 'Snow Removal', 'slug' => 'snow-removal', 'photo' => '1000001648', 'tint' => 2,
-        'alt'  => 'Green Limb work truck and equipment staged on a cleared Greensboro-area property',
+        'name' => 'Snow Removal', 'slug' => 'snow-removal', 'photo' => 'bucket-truck-winter-removal', 'tint' => 2,
+        'alt'  => 'Bucket truck removal of a bare winter tree in Greensboro',
         'desc' => 'Seasonal snow and ice clearing to keep access routes safe.',
         'bullets' => ['Driveways & walkways', 'Ice-storm access clearing', 'Same equipment, same crew'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="2" x2="22" y1="12" y2="12"/><line x1="12" x2="12" y1="2" y2="22"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/><path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/></svg>',
     ],
     [
-        'name' => 'Stump Grinding', 'slug' => 'stump-grinding', 'photo' => '1000000569', 'tint' => 3,
-        'alt'  => 'Base of a removed tree ready for stump grinding on a Greensboro lawn',
+        'name' => 'Stump Grinding', 'slug' => 'stump-grinding', 'photo' => 'stump-grinding-fresh-cut', 'tint' => 3,
+        'alt'  => 'Fresh-cut stump ready for grinding in a Greensboro yard',
         'desc' => 'Below-grade grinding that clears trip hazards and reclaims lawn.',
         'bullets' => ['Ground below grade', 'Removes trip hazards', 'Reclaims usable yard'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>',
@@ -259,7 +259,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
       <div class="about-image reveal-right">
         <div class="about-image-primary">
-          <?php echo renderPicture('1000001503', 'Green Limb Tree Service crew removing a large tree beside a Greensboro home', 720, 560, '(max-width: 900px) 100vw, 520px'); ?>
+          <?php echo renderPicture('crane-removal-two-story', 'Bucket truck removing a tree beside a two-story Greensboro home', 720, 560, '(max-width: 900px) 100vw, 520px'); ?>
         </div>
       </div>
     </div>

@@ -172,21 +172,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  /* === Reviews carousel === */
-  // v6.2: carousels are CSS scroll-snap by default (no Swiper CDN). If a build
-  // genuinely needs Swiper features, load the CDN in that page's head and this
-  // guard will initialize it; otherwise it's a harmless no-op.
-  if (typeof Swiper !== 'undefined') {
-    var reviewsSwiper = document.querySelector('.reviews-swiper');
-    if (reviewsSwiper) {
-      new Swiper('.reviews-swiper', {
-        slidesPerView: 1,
-        spaceBetween: 24,
-        loop: true,
-        pagination: { el: '.swiper-pagination', clickable: true },
-        breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
-      });
-    }
+  /* === Elfsight reviews: load platform.js only when the widget nears the viewport === */
+  var elf = document.querySelector('[data-elfsight-src]');
+  if (elf) {
+    var loadElf = function () {
+      if (elf.dataset.loaded) return; elf.dataset.loaded = '1';
+      var sc = document.createElement('script'); sc.src = elf.getAttribute('data-elfsight-src'); sc.defer = true; document.body.appendChild(sc);
+    };
+    if ('IntersectionObserver' in window) {
+      var eio = new IntersectionObserver(function (entries) { entries.forEach(function (e) { if (e.isIntersecting) { loadElf(); eio.disconnect(); } }); }, { rootMargin: '600px 0px' });
+      eio.observe(elf);
+    } else { loadElf(); }
   }
 
 });

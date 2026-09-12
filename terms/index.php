@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $pageTitle       = "Terms of Service | $siteName";
 $pageDescription = "Terms and conditions governing use of our website and engagement of our tree care services in Greensboro, NC.";
 $canonicalUrl    = $siteUrl . '/terms/';
-$ogImage         = $siteUrl . '/assets/images/logo.png';
+$ogImage         = $siteUrl . '/assets/images/logo-v2.png';
 $currentPage     = 'terms';
 $pageType        = 'other';
 

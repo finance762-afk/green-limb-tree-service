@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $pageTitle       = "Privacy Policy | $siteName";
 $pageDescription = "How $siteName collects, uses, and protects your information. Privacy practices for our website and contact forms.";
 $canonicalUrl    = $siteUrl . '/privacy-policy/';
-$ogImage         = $siteUrl . '/assets/images/logo.png';
+$ogImage         = $siteUrl . '/assets/images/logo-v2.png';
 $currentPage     = 'privacy-policy';
 $pageType        = 'other';
 

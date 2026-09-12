@@ -62,7 +62,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           </a>
         </div>
         <ul class="hero-chips">
-          <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>Licensed & insured</li>
+          <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>Fully insured</li>
           <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m6.8 6.8-2.9-2.9"/><path d="M2 12h4"/><path d="M12 22a8 8 0 0 0 0-16"/></svg>Same-day estimates</li>
           <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Historic district experience</li>
         </ul>
@@ -148,7 +148,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>We've worked throughout Graham—on historic properties near the courthouse, on residential streets radiating from downtown, and in the newer subdivisions along the edges of the city limits. Based in Greensboro, Green Limb Tree Service offers free on-site estimates and same-day emergency response anywhere in Alamance County.</p>
       </div>
       <div class="sp-split-image">
-        <?php echo renderPicture('1000005749', 'Tree work in progress near a historic property in Alamance County', 600, 400, '(min-width: 768px) 50vw, 100vw', []); ?>
+        <?php echo renderPicture('bucket-truck-tree-trimming', 'Green Limb bucket truck crew trimming a tall tree over a Greensboro yard', 600, 400, '(min-width: 768px) 50vw, 100vw', []); ?>
       </div>
     </div>
   </div>

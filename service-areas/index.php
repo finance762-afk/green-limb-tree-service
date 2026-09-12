@@ -45,7 +45,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .areas-hero .breadcrumb { justify-content: center; margin-bottom: 1.5rem; }
 .areas-hero .breadcrumb a { color: rgba(255,255,255,0.8); }
 .areas-hero .breadcrumb a:hover { color: var(--color-white); }
-.areas-hero h1 { font-size: clamp(2rem, 5vw, 2.75rem); margin-bottom: 1rem; }
+.areas-hero h1 { font-size: clamp(2rem, 5vw, 2.75rem); margin-bottom: 1rem; color: var(--color-white); }
+.areas-hero .breadcrumb span, .areas-hero .breadcrumb [aria-current] { color: rgba(255,255,255,0.95); }
 .areas-hero p { font-size: 1.125rem; line-height: 1.6; color: rgba(255,255,255,0.9); max-width: 65ch; margin: 0 auto 2rem; }
 
 .areas-grid-section { padding: 4rem 0; background: var(--color-bg); }

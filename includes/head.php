@@ -24,7 +24,7 @@
     <meta property="og:title" content="<?php echo htmlspecialchars($fullTitle); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($description); ?>">
     <meta property="og:url" content="<?php echo htmlspecialchars($canonical); ?>">
-    <meta property="og:image" content="<?php echo $siteUrl; ?>/assets/images/logo.png">
+    <meta property="og:image" content="<?php echo $siteUrl; ?>/assets/images/logo-v2.png">
     <meta property="og:site_name" content="<?php echo htmlspecialchars($siteName); ?>">
     <meta property="og:locale" content="en_US">
 
@@ -35,6 +35,7 @@
 
     <!-- Font preload (self-hosted v6.2 — NO Google Fonts CDN) -->
     <link rel="preload" href="/assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
 
     <?php if (isset($heroPreload) && !empty($heroPreload)): ?>
     <!-- Hero image preload (v6.3 — avif srcset, fetchpriority high) -->
@@ -83,7 +84,7 @@
             ],
             'hasMap'      => $googleBusinessProfile,
             'openingHours' => 'Mo-Sa 00:00-23:59',
-            'image'        => $siteUrl . '/assets/images/logo.png',
+            'image'        => $siteUrl . '/assets/images/logo-v2.png',
             'priceRange'   => '$$',
             'areaServed'   => array_map(function($area) {
                 return ['@type' => 'City', 'name' => $area];

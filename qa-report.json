@@ -7,16 +7,16 @@
   },
   "site": "green-limb-tree-service",
   "expected_slug": "green-limb-tree-service",
-  "passed": false,
-  "grade": "F",
-  "score_pct": 93,
+  "passed": true,
+  "grade": "A",
+  "score_pct": 95,
   "summary": {
-    "total": 252,
-    "passed": 219,
-    "failed": 25,
+    "total": 257,
+    "passed": 228,
+    "failed": 21,
     "warn": 8,
-    "blockers_failed": 6,
-    "warnings_failed": 21
+    "blockers_failed": 0,
+    "warnings_failed": 24
   },
   "techniques_detected": [
     {
@@ -294,22 +294,22 @@
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 574 lines total",
+      "detail": "Linked to 1 external CSS file(s), 576 lines total",
       "file": "privacy-policy/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "574",
+      "actual": "576",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 574 lines total",
+      "detail": "Linked to 1 external CSS file(s), 576 lines total",
       "file": "terms/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "574",
+      "actual": "576",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -349,22 +349,22 @@
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 574 lines total",
+      "detail": "Linked to 1 external CSS file(s), 576 lines total",
       "file": "cookie-policy/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "574",
+      "actual": "576",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 574 lines total",
+      "detail": "Linked to 1 external CSS file(s), 576 lines total",
       "file": "accessibility/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "574",
+      "actual": "576",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -613,44 +613,44 @@
     {
       "status": "pass",
       "check": "Premium tier CSS bar",
-      "detail": "744 lines (170 inline + 574 external, need \u22650)",
+      "detail": "746 lines (170 inline + 576 external, need \u22650)",
       "file": "index.php",
       "severity": "blocker",
       "expected": "0",
-      "actual": "744",
+      "actual": "746",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "Premium tier CSS bar",
-      "detail": "605 lines (31 inline + 574 external, need \u22650)",
+      "detail": "607 lines (31 inline + 576 external, need \u22650)",
       "file": "about/index.php",
       "severity": "blocker",
       "expected": "0",
-      "actual": "605",
+      "actual": "607",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "Premium tier CSS bar",
-      "detail": "586 lines (12 inline + 574 external, need \u22650)",
+      "detail": "588 lines (12 inline + 576 external, need \u22650)",
       "file": "services/index.php",
       "severity": "blocker",
       "expected": "0",
-      "actual": "586",
+      "actual": "588",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "Premium tier CSS bar",
-      "detail": "610 lines (36 inline + 574 external, need \u22650)",
+      "detail": "612 lines (36 inline + 576 external, need \u22650)",
       "file": "contact/index.php",
       "severity": "blocker",
       "expected": "0",
-      "actual": "610",
+      "actual": "612",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -1702,7 +1702,7 @@
     {
       "status": "pass",
       "check": "llms.txt content",
-      "detail": "86 lines",
+      "detail": "98 lines",
       "file": "",
       "severity": "warning",
       "expected": null,
@@ -1889,6 +1889,17 @@
     {
       "status": "fail",
       "check": "Image resolution",
+      "detail": "1000005749-1600.webp is 450x800, recommend at least 800x500 for section",
+      "file": "assets/images/1000005749-1600.webp",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
+      "status": "fail",
+      "check": "Image resolution",
       "detail": "1000005742-480.webp is 480x1039, recommend at least 800x500 for section",
       "file": "assets/images/1000005742-480.webp",
       "severity": "warning",
@@ -1902,6 +1913,28 @@
       "check": "Image resolution",
       "detail": "favicon-32x32.png is 32x32, recommend at least 800x500 for section",
       "file": "assets/images/favicon-32x32.png",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
+      "status": "fail",
+      "check": "Image resolution",
+      "detail": "1000005749.jpg is 450x800, recommend at least 800x500 for section",
+      "file": "assets/images/1000005749.jpg",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
+      "status": "fail",
+      "check": "Image resolution",
+      "detail": "1000001503.jpg is 700x525, recommend at least 800x500 for section",
+      "file": "assets/images/1000001503.jpg",
       "severity": "warning",
       "expected": null,
       "actual": null,
@@ -1935,6 +1968,28 @@
       "check": "Image resolution",
       "detail": "1000001503-480.webp is 480x360, recommend at least 800x500 for section",
       "file": "assets/images/1000001503-480.webp",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
+      "status": "fail",
+      "check": "Image resolution",
+      "detail": "1000001533.jpg is 700x525, recommend at least 800x500 for section",
+      "file": "assets/images/1000001533.jpg",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
+      "status": "fail",
+      "check": "Image resolution",
+      "detail": "1000005742.png is 324x700, recommend at least 800x500 for section",
+      "file": "assets/images/1000005742.png",
       "severity": "warning",
       "expected": null,
       "actual": null,
@@ -2349,14 +2404,14 @@
       "section": "PREMIUM TIER EXTRAS"
     },
     {
-      "status": "fail",
-      "check": "Premium: blog index is a stub",
-      "detail": "blog/index.php contains \"Coming Soon\"",
+      "status": "pass",
+      "check": "Premium: blog index registry-driven",
+      "detail": "",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Render the $blogPosts registry as an editorial card grid",
+      "fix_hint": "",
       "section": "PREMIUM TIER EXTRAS"
     },
     {
@@ -2371,14 +2426,14 @@
       "section": "PREMIUM TIER EXTRAS"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "Undefined CSS tokens",
-      "detail": "5 var() token(s) never defined: --ease-out, --fs-base, --fs-h4, --fs-h5, --max-width-narrow",
+      "detail": "",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Define them in framework.css :root (or use the alias block)",
+      "fix_hint": "",
       "section": "CSS CONTRACT"
     },
     {
@@ -2503,25 +2558,25 @@
       "section": "AEO SCHEMA"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "llms.txt complete",
-      "detail": "Missing sections: Business Information, Pages, About",
+      "detail": "",
       "file": "",
       "severity": "info",
       "expected": null,
       "actual": null,
-      "fix_hint": "Add missing sections to llms.txt",
+      "fix_hint": "",
       "section": "AEO CONTENT"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "Hero answer word count",
-      "detail": "27 words (expected 35-70)",
+      "detail": "49 words",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Adjust .hero-answer paragraph to 35-70 words",
+      "fix_hint": "",
       "section": "AEO CONTENT"
     },
     {
@@ -2580,14 +2635,14 @@
       "section": "PERFORMANCE v6.2"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "No runtime icon injection",
-      "detail": "data-lucide/createIcons found in: index.php",
+      "detail": "",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Inline the SVGs at build time from references/lucide-icons/ per performance-2026.md Part C / aeo-crawlability.md",
+      "fix_hint": "",
       "section": "PERFORMANCE v6.2"
     },
     {
@@ -2668,14 +2723,14 @@
       "section": "PERFORMANCE v6.2"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "Hero image \u2264150KB",
-      "detail": "1000001533.jpg: 6720KB (largest image (no hero-named file); budget 150KB)",
+      "detail": "1000001533-1600.webp: 145KB (largest image (no hero-named file))",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Re-encode as webp ~80 quality at 1600w max per performance-2026.md Parts A/B",
+      "fix_hint": "",
       "section": "PERFORMANCE v6.2"
     },
     {
@@ -2723,20 +2778,20 @@
       "section": "PERFORMANCE v6.3"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "No image file > 250KB",
-      "detail": "2 referenced file(s) over budget: logo.png 1236KB, logo-mark.png 860KB",
+      "detail": "16 referenced image path(s) checked",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Re-encode via lib/responsive-images.ts (quality ladder caps 480/960/1600 at 50/100/150KB) and reference the variants, not the original",
+      "fix_hint": "",
       "section": "PERFORMANCE v6.3"
     },
     {
       "status": "warn",
       "check": "Unreferenced images > 250KB on disk",
-      "detail": "11 file(s) not referenced by any page, e.g. 1000001533.jpg 6720KB, 1000001503.jpg 5978KB, 1000001917.jpg 5480KB",
+      "detail": "1 file(s) not referenced by any page, e.g. 1000005749-1600.avif 322KB",
       "file": "",
       "severity": "info",
       "expected": null,
@@ -2789,25 +2844,25 @@
       "section": "PERFORMANCE v6.3"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "Homepage image payload \u2264600KB (static estimate)",
-      "detail": "~2104KB eager at 960w candidates (budget 600KB; +0KB lazy)",
+      "detail": "~265KB eager at 960w candidates (+0KB lazy, loaded on scroll)",
       "file": "",
       "severity": "warning",
       "expected": null,
       "actual": null,
-      "fix_hint": "Fewer/lighter above-the-fold photos; lazy-load the rest; check the quality ladder output",
+      "fix_hint": "",
       "section": "PERFORMANCE v6.3"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "Total page weight \u22641.5MB (static estimate)",
-      "detail": "~2293KB uncompressed (warn above 1.5MB)",
+      "detail": "~455KB uncompressed HTML+CSS+JS+fonts+images",
       "file": "",
       "severity": "warning",
       "expected": null,
       "actual": null,
-      "fix_hint": "Trim images first (they dominate), then fonts (\u22643 files) and JS",
+      "fix_hint": "",
       "section": "PERFORMANCE v6.3"
     },
     {
@@ -2914,6 +2969,17 @@
     {
       "status": "fail",
       "check": "Image resolution",
+      "detail": "1000005749-1600.webp is 450x800, recommend at least 800x500 for section",
+      "file": "assets/images/1000005749-1600.webp",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
+      "status": "fail",
+      "check": "Image resolution",
       "detail": "1000005742-480.webp is 480x1039, recommend at least 800x500 for section",
       "file": "assets/images/1000005742-480.webp",
       "severity": "warning",
@@ -2927,6 +2993,28 @@
       "check": "Image resolution",
       "detail": "favicon-32x32.png is 32x32, recommend at least 800x500 for section",
       "file": "assets/images/favicon-32x32.png",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
+      "status": "fail",
+      "check": "Image resolution",
+      "detail": "1000005749.jpg is 450x800, recommend at least 800x500 for section",
+      "file": "assets/images/1000005749.jpg",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
+      "status": "fail",
+      "check": "Image resolution",
+      "detail": "1000001503.jpg is 700x525, recommend at least 800x500 for section",
+      "file": "assets/images/1000001503.jpg",
       "severity": "warning",
       "expected": null,
       "actual": null,
@@ -2969,6 +3057,28 @@
     {
       "status": "fail",
       "check": "Image resolution",
+      "detail": "1000001533.jpg is 700x525, recommend at least 800x500 for section",
+      "file": "assets/images/1000001533.jpg",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
+      "status": "fail",
+      "check": "Image resolution",
+      "detail": "1000005742.png is 324x700, recommend at least 800x500 for section",
+      "file": "assets/images/1000005742.png",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
+      "status": "fail",
+      "check": "Image resolution",
       "detail": "1000001917-480.webp is 480x360, recommend at least 800x500 for section",
       "file": "assets/images/1000001917-480.webp",
       "severity": "warning",
@@ -3001,28 +3111,6 @@
     },
     {
       "status": "fail",
-      "check": "Premium: blog index is a stub",
-      "detail": "blog/index.php contains \"Coming Soon\"",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Render the $blogPosts registry as an editorial card grid",
-      "section": "PREMIUM TIER EXTRAS"
-    },
-    {
-      "status": "fail",
-      "check": "Undefined CSS tokens",
-      "detail": "5 var() token(s) never defined: --ease-out, --fs-base, --fs-h4, --fs-h5, --max-width-narrow",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Define them in framework.css :root (or use the alias block)",
-      "section": "CSS CONTRACT"
-    },
-    {
-      "status": "fail",
       "check": "No carousel libraries",
       "detail": "Carousel JS found in: assets/js/main.js",
       "file": "",
@@ -3031,83 +3119,6 @@
       "actual": null,
       "fix_hint": "Replace Swiper/Slick with CSS scroll-snap or static grid",
       "section": "DESIGN"
-    },
-    {
-      "status": "fail",
-      "check": "llms.txt complete",
-      "detail": "Missing sections: Business Information, Pages, About",
-      "file": "",
-      "severity": "info",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Add missing sections to llms.txt",
-      "section": "AEO CONTENT"
-    },
-    {
-      "status": "fail",
-      "check": "Hero answer word count",
-      "detail": "27 words (expected 35-70)",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Adjust .hero-answer paragraph to 35-70 words",
-      "section": "AEO CONTENT"
-    },
-    {
-      "status": "fail",
-      "check": "No runtime icon injection",
-      "detail": "data-lucide/createIcons found in: index.php",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Inline the SVGs at build time from references/lucide-icons/ per performance-2026.md Part C / aeo-crawlability.md",
-      "section": "PERFORMANCE v6.2"
-    },
-    {
-      "status": "fail",
-      "check": "Hero image \u2264150KB",
-      "detail": "1000001533.jpg: 6720KB (largest image (no hero-named file); budget 150KB)",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Re-encode as webp ~80 quality at 1600w max per performance-2026.md Parts A/B",
-      "section": "PERFORMANCE v6.2"
-    },
-    {
-      "status": "fail",
-      "check": "No image file > 250KB",
-      "detail": "2 referenced file(s) over budget: logo.png 1236KB, logo-mark.png 860KB",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Re-encode via lib/responsive-images.ts (quality ladder caps 480/960/1600 at 50/100/150KB) and reference the variants, not the original",
-      "section": "PERFORMANCE v6.3"
-    },
-    {
-      "status": "fail",
-      "check": "Homepage image payload \u2264600KB (static estimate)",
-      "detail": "~2104KB eager at 960w candidates (budget 600KB; +0KB lazy)",
-      "file": "",
-      "severity": "warning",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Fewer/lighter above-the-fold photos; lazy-load the rest; check the quality ladder output",
-      "section": "PERFORMANCE v6.3"
-    },
-    {
-      "status": "fail",
-      "check": "Total page weight \u22641.5MB (static estimate)",
-      "detail": "~2293KB uncompressed (warn above 1.5MB)",
-      "file": "",
-      "severity": "warning",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Trim images first (they dominate), then fonts (\u22643 files) and JS",
-      "section": "PERFORMANCE v6.3"
     },
     {
       "status": "fail",
@@ -3180,7 +3191,7 @@
     {
       "status": "warn",
       "check": "Unreferenced images > 250KB on disk",
-      "detail": "11 file(s) not referenced by any page, e.g. 1000001533.jpg 6720KB, 1000001503.jpg 5978KB, 1000001917.jpg 5480KB",
+      "detail": "1 file(s) not referenced by any page, e.g. 1000005749-1600.avif 322KB",
       "file": "",
       "severity": "info",
       "expected": null,

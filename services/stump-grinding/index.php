@@ -43,22 +43,22 @@ $faqs = [
 /* Related services shown in the "Other Services" grid (never the current page) */
 $otherServices = [
     [
-        'name' => 'Tree Removal', 'slug' => 'tree-removal', 'photo' => '1000000569', 'tint' => 1,
-        'alt'  => 'Green Limb Tree Service sectioning a large tree down beside a Greensboro home',
+        'name' => 'Tree Removal', 'slug' => 'tree-removal', 'photo' => 'crane-removal-two-story', 'tint' => 1,
+        'alt'  => 'Bucket truck removing a tree beside a two-story Greensboro home',
         'desc' => 'Have a hazardous tree that needs to come down first?',
         'bullets' => ['Hazardous trees removed safely', 'Careful rigging near homes', 'Debris hauled away'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/></svg>',
     ],
     [
-        'name' => 'Tree Service', 'slug' => 'tree-service', 'photo' => '1000001917', 'tint' => 2,
-        'alt'  => 'Green Limb Tree Service crew providing full tree care for a Greensboro property',
+        'name' => 'Tree Service', 'slug' => 'tree-service', 'photo' => 'lift-tall-oak-takedown', 'tint' => 2,
+        'alt'  => 'Spider lift taking down a tall oak on a Greensboro property',
         'desc' => 'Need ongoing pruning and canopy care, not just removal?',
         'bullets' => ['Full-service canopy care', 'Pruning & health checks', 'One crew, every tree need'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>',
     ],
     [
-        'name' => 'Land Clearing', 'slug' => 'land-clearing', 'photo' => '1000001648', 'tint' => 3,
-        'alt'  => 'Cleared lot and brush removal on a Greensboro property',
+        'name' => 'Land Clearing', 'slug' => 'land-clearing', 'photo' => 'land-clearing-lot-graded', 'tint' => 3,
+        'alt'  => 'Residential lot cleared and graded by Green Limb Tree Service',
         'desc' => 'Clearing a whole lot, not just one stump?',
         'bullets' => ['Lots & brush cleared', 'Ready for construction', 'Overgrown property reclaimed'],
         'icon' => '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>',
@@ -254,7 +254,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
       <div class="sp-breakdown-media reveal-right">
         <div class="about-image-primary">
-          <?php echo renderPicture('1000000569', 'Stump ground below grade and ready for backfill on a Greensboro property', 720, 620, '(max-width: 900px) 100vw, 460px'); ?>
+          <?php echo renderPicture('stump-grinding-fresh-cut', 'Fresh-cut stump ready for grinding in a Greensboro yard', 720, 620, '(max-width: 900px) 100vw, 460px'); ?>
         </div>
       </div>
     </div>
@@ -338,15 +338,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
     <div class="sp-gallery-grid" data-p1-dynamic>
       <figure class="sp-gallery-item reveal-scale">
-        <?php echo renderPicture('1000000569', 'Stump ground below grade on a Greensboro property', 760, 900, '(max-width: 700px) 100vw, 55vw'); ?>
+        <?php echo renderPicture('crew-skid-steer-cleanup', 'Skid steer moving logs during cleanup on a Greensboro tree job', 760, 900, '(max-width: 700px) 100vw, 55vw'); ?>
         <figcaption>Below-grade grind, ready for backfill</figcaption>
       </figure>
       <figure class="sp-gallery-item reveal-scale reveal-delay-1">
-        <?php echo renderPicture('1000001503', 'Grinding equipment clearing a stump close to a Greensboro home', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
+        <?php echo renderPicture('finished-lawn-after-removal', 'Lawn left clean after Green Limb tree work on a Greensboro property', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
         <figcaption>Stump cleared close to the house</figcaption>
       </figure>
       <figure class="sp-gallery-item reveal-scale reveal-delay-2">
-        <?php echo renderPicture('1000001648', 'Yard reclaimed and raked clean after stump grinding in Greensboro', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
+        <?php echo renderPicture('cleared-front-yard', 'Front yard raked clean after a Green Limb tree removal in Greensboro', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
         <figcaption>Yard reclaimed after grinding and cleanup</figcaption>
       </figure>
     </div>

@@ -137,7 +137,7 @@ $gbpMapEmbed      = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m1
 $directionsUrl    = 'https://www.google.com/maps/dir/?api=1&destination=place_id:ChIJfzv92LOcfG0R99SqZvR84uM';
 $reviewRequestUrl = 'https://search.google.com/local/writereview?placeid=ChIJfzv92LOcfG0R99SqZvR84uM';
 $geo              = ['lat' => 36.0972205, 'lng' => -79.77908765000001];
-$elfsightEmbed    = '<script src="https://static.elfsight.com/platform/platform.js" defer></script>' . "\n" . '<div class="elfsight-app-c90fa706-11ab-44c2-a07e-14790c4c3792" data-elfsight-app-lazy></div>';
+$elfsightEmbed    = '<div class="elfsight-app-c90fa706-11ab-44c2-a07e-14790c4c3792" data-elfsight-app-lazy data-elfsight-src="https://static.elfsight.com/platform/platform.js"></div>'; // platform.js is injected by main.js when this block nears the viewport (third-party JS off the critical path, 2026-09-12)
 $acceptsSms       = false;
 
 /* ── Analytics (placeholder — replaced post-launch) ───────────────────────── */
@@ -160,7 +160,7 @@ $ownerName       = 'Woan Y';
 /* ── Assets / CSS cache-bust ──────────────────────────────────────────────────
  * SINGLE source of the framework.css cache-bust. Pages must NEVER set their own
  * $cssVersion — bump this value on every framework.css change. */
-$cssVersion = '1';
+$cssVersion = '20260912a';
 
 /* ── Lead form ────────────────────────────────────────────────────────────── */
 $formAction = 'https://db.pageone.cloud/functions/v1/leads/green-limb-tree-service';

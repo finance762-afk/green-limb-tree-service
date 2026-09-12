@@ -122,7 +122,7 @@ function generateLocalBusinessSchema() {
             'name' => $address['city'] . ', ' . $address['state']
         ],
         'priceRange' => '$$',
-        'image' => $siteUrl . '/assets/images/logo-mark.png'
+        'image' => $siteUrl . '/assets/images/logo-mark-v2.png'
     ];
 
     if (!empty($serviceList)) {
@@ -195,7 +195,7 @@ function generateFAQSchema($faqs) {
  * every manifest photo. This emits an AVIF <source> first, then a WebP <img>
  * fallback with srcset — the v6.3 image standard. Colors/animation are untouched.
  *
- * @param string $base    Photo basename without extension (e.g. '1000001503')
+ * @param string $base    Photo basename without extension (e.g. 'spider-lift-oak-removal')
  * @param string $alt     Descriptive alt text
  * @param int    $width   Intrinsic width attribute (CLS guard)
  * @param int    $height  Intrinsic height attribute (CLS guard)
@@ -203,20 +203,40 @@ function generateFAQSchema($faqs) {
  * @param array  $opts    ['eager'=>bool] hero LCP image (eager + fetchpriority); default lazy
  * @return string         <picture> HTML
  */
+/**
+ * Srcset for one format, listing only the variant files that exist on disk
+ * (image-variants.mjs skips widths larger than the source — a 975px photo has
+ * no -1600 twin, and a missing candidate breaks the whole <picture> on 2x/3x
+ * phones and in Lighthouse). Cached per request.
+ */
+function pictureSrcset($base, $fmt) {
+    static $cache = [];
+    $key = $base . '|' . $fmt;
+    if (isset($cache[$key])) return $cache[$key];
+    $dir = '/assets/images/';
+    $parts = [];
+    foreach ([480, 960, 1600] as $w) {
+        $file = $base . '-' . $w . '.' . $fmt;
+        if (is_file($_SERVER['DOCUMENT_ROOT'] . $dir . $file)) $parts[] = $dir . $file . ' ' . $w . 'w';
+    }
+    return $cache[$key] = implode(', ', $parts);
+}
+
 function renderPicture($base, $alt, $width, $height, $sizes, $opts = []) {
     $eager = !empty($opts['eager']);
     $dir   = '/assets/images/';
-    $avif  = $dir . $base . '-480.avif 480w, ' . $dir . $base . '-960.avif 960w, ' . $dir . $base . '-1600.avif 1600w';
-    $webp  = $dir . $base . '-480.webp 480w, ' . $dir . $base . '-960.webp 960w, ' . $dir . $base . '-1600.webp 1600w';
+    $avif  = pictureSrcset($base, 'avif');
+    $webp  = pictureSrcset($base, 'webp');
     $loading = $eager ? 'eager' : 'lazy';
     $priority = $eager ? ' fetchpriority="high"' : ' decoding="async"';
 
-    return '<picture>'
-        . '<source type="image/avif" srcset="' . $avif . '" sizes="' . htmlspecialchars($sizes) . '">'
-        . '<img src="' . $dir . $base . '.jpg" srcset="' . $webp . '" sizes="' . htmlspecialchars($sizes) . '"'
+    $out = '<picture>';
+    if ($avif !== '') $out .= '<source type="image/avif" srcset="' . $avif . '" sizes="' . htmlspecialchars($sizes) . '">';
+    $out .= '<img src="' . $dir . $base . '.jpg"' . ($webp !== '' ? ' srcset="' . $webp . '" sizes="' . htmlspecialchars($sizes) . '"' : '')
         . ' alt="' . htmlspecialchars($alt) . '" width="' . (int)$width . '" height="' . (int)$height . '"'
         . ' loading="' . $loading . '"' . $priority . '>'
         . '</picture>';
+    return $out;
 }
 
 /**

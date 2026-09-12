@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $pageTitle       = "Cookie Policy | $siteName";
 $pageDescription = "How $siteName uses cookies and tracking technologies on our website. Learn what cookies we use and how to control them.";
 $canonicalUrl    = $siteUrl . '/cookie-policy/';
-$ogImage         = $siteUrl . '/assets/images/logo.png';
+$ogImage         = $siteUrl . '/assets/images/logo-v2.png';
 $currentPage     = 'cookie-policy';
 $pageType        = 'other';
 

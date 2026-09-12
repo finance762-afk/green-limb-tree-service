@@ -22,7 +22,7 @@ $faqSections = [
             'a' => 'Green Limb Tree Service covers Greensboro and the wider Piedmont Triad — Guilford and Alamance counties, including High Point, Jamestown, Pleasant Garden, Brown Summit, Burlington, Graham, Haw River, and Mebane. Call and we\'ll confirm you\'re in range.',
         ],
         [
-            'q' => 'Are you licensed and insured?',
+            'q' => 'Are you insured?',
             'a' => 'Yes. Green Limb Tree Service carries liability insurance on every job, and our crews follow industry rigging and climbing safety practices. We are glad to provide proof of insurance before work begins on your Greensboro property.',
         ],
         [
@@ -128,7 +128,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
    FAQ page composition (Green Limb Tree Service)
    ============================================================================ */
 
-.faq-hero { padding-block: clamp(3rem, 8vw, 5rem); background: var(--color-paper); }
+.faq-hero { padding: calc(var(--nav-height) + clamp(2rem, 5vw, 3.5rem)) 0 clamp(2.5rem, 6vw, 4rem); background: var(--color-paper); }
 .faq-hero .container { max-width: var(--max-width-narrow); text-align: center; }
 .faq-hero-lead { font-size: var(--fs-lead); color: var(--color-ink-2); margin-top: var(--space-3); max-width: 60ch; margin-inline: auto; }
 
@@ -188,5 +188,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
     </div>
 </section>
+
+<?php $ctaBandId = 'cta-band'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

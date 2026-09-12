@@ -5,7 +5,6 @@
  */
 $pageTitle       = 'How Much Does Tree Removal Cost in Greensboro, NC?';
 $pageDescription = 'Tree removal costs in Greensboro range from $300–$4,500+ depending on tree size, location, and access. Learn what drives pricing and how to get an accurate estimate.';
-$canonicalUrl    = $siteUrl . '/blog/how-much-does-tree-removal-cost-greensboro-nc/';
 $currentPage     = 'blog';
 
 $postDate        = 'September 12, 2026';
@@ -21,7 +20,7 @@ $schemaMarkup = json_encode([
             '@id'              => $siteUrl . '/blog/how-much-does-tree-removal-cost-greensboro-nc/#article',
             'headline'         => 'How Much Does Tree Removal Cost in Greensboro, NC?',
             'description'      => $pageDescription,
-            'image'            => $siteUrl . '/assets/images/1000001648-960.webp',
+            'image'            => $siteUrl . '/assets/images/crane-removal-two-story-960.webp',
             'datePublished'    => '2026-09-12',
             'dateModified'     => '2026-09-12',
             'author'           => [
@@ -78,6 +77,8 @@ $schemaMarkup = json_encode([
 ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+$canonicalUrl    = $siteUrl . '/blog/how-much-does-tree-removal-cost-greensboro-nc/';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
@@ -199,7 +200,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <meta itemprop="headline"      content="How Much Does Tree Removal Cost in Greensboro, NC?">
   <meta itemprop="datePublished" content="<?php echo $postDateISO; ?>">
   <meta itemprop="author"        content="<?php echo htmlspecialchars($postAuthor); ?>">
-  <meta itemprop="image"         content="<?php echo $siteUrl; ?>/assets/images/1000001648-960.webp">
+  <meta itemprop="image"         content="<?php echo $siteUrl; ?>/assets/images/crane-removal-two-story-960.webp">
 
   <div class="container">
     <div class="article-layout">
@@ -214,12 +215,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <!-- Featured image -->
         <picture>
-          <source type="image/avif" srcset="/assets/images/1000001648-480.avif 480w, /assets/images/1000001648-960.avif 960w, /assets/images/1000001648-1600.avif 1600w">
+          <source type="image/avif" srcset="/assets/images/crane-removal-two-story-480.avif 480w, /assets/images/crane-removal-two-story-960.avif 960w">
           <img
-            src="/assets/images/1000001648-960.webp"
-            srcset="/assets/images/1000001648-480.webp 480w, /assets/images/1000001648-960.webp 960w, /assets/images/1000001648-1600.webp 1600w"
+            src="/assets/images/crane-removal-two-story-960.webp"
+            srcset="/assets/images/crane-removal-two-story-480.webp 480w, /assets/images/crane-removal-two-story-960.webp 960w"
             sizes="(max-width: 768px) 100vw, 780px"
-            alt="Tree removal crew from Green Limb Tree Service working on a large oak in a Greensboro neighborhood — demonstrating safe rigging and equipment setup for residential tree removal"
+            alt="Green Limb Tree Service bucket truck crew removing a tree beside a two-story Greensboro home"
             class="article-featured-img"
             width="1600"
             height="1000"
@@ -234,7 +235,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
 
         <p>
-          Tree removal pricing is not a single number — it is a calculation based on the specific tree, where it sits on the property, and what needs to happen to remove it safely. A 20-foot dogwood in an open yard might cost $350. A 70-foot oak growing over a house with limited yard access could run $3,500. Green Limb Tree Service, a family-owned licensed tree service based in Greensboro, NC, provides free on-site estimates because the variables that affect cost can only be properly evaluated in person.
+          Tree removal pricing is not a single number — it is a calculation based on the specific tree, where it sits on the property, and what needs to happen to remove it safely. A 20-foot dogwood in an open yard might cost $350. A 70-foot oak growing over a house with limited yard access could run $3,500. Green Limb Tree Service, a family-owned, fully insured tree service based in Greensboro, NC, provides free on-site estimates because the variables that affect cost can only be properly evaluated in person.
         </p>
 
         <p>
@@ -365,6 +366,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div><!-- /.article-layout -->
   </div><!-- /.container -->
 </article>
+
+<?php $ctaBandId = 'cta-band'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
+
+
 
 <?php if (!empty($schemaMarkup)): ?>
 <script type="application/ld+json"><?php echo $schemaMarkup; ?></script>
