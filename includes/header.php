@@ -38,7 +38,7 @@
                         $displayAreas = array_slice($serviceAreas, 0, 8);
                         foreach ($displayAreas as $navArea):
                             $areaSlug = getAreaSlug($navArea);
-                            $areaPath = '/areas/' . $areaSlug . '/';
+                            $areaPath = '/service-areas/' . $areaSlug . '/';
                             // Gate links until pages exist
                             if (is_dir($_SERVER['DOCUMENT_ROOT'] . $areaPath)):
                         ?>

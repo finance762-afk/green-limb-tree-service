@@ -33,6 +33,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
+<main id="main-content">
+
 <section class="hero hero--legal" aria-label="Cookie Policy">
     <div class="hero__copy">
         <span class="eyebrow-label">Legal</span>
@@ -118,5 +120,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
 
 </article>
+
+</main>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

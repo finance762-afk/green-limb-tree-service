@@ -46,7 +46,7 @@
                         $footerAreas = array_slice($serviceAreas, 0, 6);
                         foreach ($footerAreas as $footArea):
                             $areaSlug = getAreaSlug($footArea);
-                            $areaPath = '/areas/' . $areaSlug . '/';
+                            $areaPath = '/service-areas/' . $areaSlug . '/';
                             if (is_dir($_SERVER['DOCUMENT_ROOT'] . $areaPath)):
                         ?>
                         <li><a href="<?php echo $areaPath; ?>"><?php echo htmlspecialchars($footArea); ?></a></li>
