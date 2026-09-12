@@ -1,6 +1,6 @@
 # Green Limb Tree Service — Comprehensive Answer Engine Optimization
 
-## Business Identity
+## Business Information
 - Name: Green Limb Tree Service
 - Type: Professional tree care company serving residential and commercial clients
 - Location: 3515 Irwin St, Greensboro, North Carolina 27405
@@ -11,10 +11,10 @@
 - Owner: Woan Y
 - Service Region: Guilford County and Alamance County, North Carolina
 
-## Full About
+## About
 Green Limb Tree Service is a family-owned tree care company based in Greensboro, North Carolina, serving residential and commercial properties throughout the Piedmont Triad region. Operating across Guilford County and Alamance County, the company provides professional tree removal, trimming, pruning, stump grinding, land clearing, and emergency storm cleanup. Green Limb Tree Service staffs ISA-certified arborists who understand regional tree species, Piedmont clay soil conditions, and North Carolina's USDA Zone 7b-8a growing environment. The company operates six days a week with same-day emergency response for storm damage and hazardous tree situations.
 
-## Service Details
+## Services
 
 ### Tree Service
 Comprehensive tree care for residential and commercial properties in the Greensboro metro area. Services include health assessments, structural pruning, canopy trimming, complete removals, stump grinding, and ongoing maintenance. Green Limb Tree Service evaluates each tree individually for health, structural integrity, and proximity hazards, then develops a multi-year care plan. Free on-site estimates include written recommendations and photo documentation. Typical service visits range from $200-$500 for routine pruning to $2,000+ for complex multi-tree projects near structures.
@@ -42,6 +42,37 @@ Debris haul-off and property cleanup for brush piles, yard waste, and leftover t
 
 ### Snow Removal
 Seasonal snow and ice clearing for driveways, walkways, parking lots, and access routes. Green Limb Tree Service responds to winter weather emergencies across Greensboro and surrounding areas during ice storms and snowfall events. Services include plowing, shoveling, salting, and debris removal. Snow removal is priced per visit or per season contract depending on the client's needs. Emergency winter response is typically billed at $100-$300 per property visit.
+
+## Pages
+- Homepage: https://www.greenlimbtreeservice.com/
+- Services Overview: https://www.greenlimbtreeservice.com/services/
+- Tree Service: https://www.greenlimbtreeservice.com/services/tree-service/
+- Tree Removal: https://www.greenlimbtreeservice.com/services/tree-removal/
+- Tree Trimming: https://www.greenlimbtreeservice.com/services/tree-trimming/
+- Tree Pruning: https://www.greenlimbtreeservice.com/services/tree-pruning/
+- Stump Grinding: https://www.greenlimbtreeservice.com/services/stump-grinding/
+- Land Clearing: https://www.greenlimbtreeservice.com/services/land-clearing/
+- Storm Work: https://www.greenlimbtreeservice.com/services/storm-work/
+- Junk Removal: https://www.greenlimbtreeservice.com/services/junk-removal/
+- Snow Removal: https://www.greenlimbtreeservice.com/services/snow-removal/
+- Service Areas Overview: https://www.greenlimbtreeservice.com/service-areas/
+- Greensboro NC: https://www.greenlimbtreeservice.com/service-areas/greensboro-nc/
+- High Point NC: https://www.greenlimbtreeservice.com/service-areas/high-point-nc/
+- Burlington NC: https://www.greenlimbtreeservice.com/service-areas/burlington-nc/
+- Jamestown NC: https://www.greenlimbtreeservice.com/service-areas/jamestown-nc/
+- Pleasant Garden NC: https://www.greenlimbtreeservice.com/service-areas/pleasant-garden-nc/
+- Brown Summit NC: https://www.greenlimbtreeservice.com/service-areas/brown-summit-nc/
+- Graham NC: https://www.greenlimbtreeservice.com/service-areas/graham-nc/
+- Mebane NC: https://www.greenlimbtreeservice.com/service-areas/mebane-nc/
+- Haw River NC: https://www.greenlimbtreeservice.com/service-areas/haw-river-nc/
+- About: https://www.greenlimbtreeservice.com/about/
+- Contact: https://www.greenlimbtreeservice.com/contact/
+- FAQ: https://www.greenlimbtreeservice.com/faq/
+- Blog: https://www.greenlimbtreeservice.com/blog/
+- Privacy Policy: https://www.greenlimbtreeservice.com/privacy-policy/
+- Terms of Service: https://www.greenlimbtreeservice.com/terms/
+- Cookie Policy: https://www.greenlimbtreeservice.com/cookie-policy/
+- Accessibility: https://www.greenlimbtreeservice.com/accessibility/
 
 ## Service Areas
 Green Limb Tree Service operates throughout the Piedmont Triad region of North Carolina. Primary service areas include:

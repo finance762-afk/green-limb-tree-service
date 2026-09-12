@@ -9,13 +9,13 @@
   "expected_slug": "green-limb-tree-service",
   "passed": false,
   "grade": "F",
-  "score_pct": 92,
+  "score_pct": 93,
   "summary": {
-    "total": 251,
-    "passed": 217,
-    "failed": 26,
+    "total": 252,
+    "passed": 219,
+    "failed": 25,
     "warn": 8,
-    "blockers_failed": 7,
+    "blockers_failed": 6,
     "warnings_failed": 21
   },
   "techniques_detected": [
@@ -237,14 +237,14 @@
       "section": "FILE STRUCTURE"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "AEO file: llms-full.txt",
-      "detail": "Missing \u2014 required for AEO",
+      "detail": "",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Create llms-full.txt per references/seo-aeo-2026.md",
+      "fix_hint": "",
       "section": "FILE STRUCTURE"
     },
     {
@@ -1711,6 +1711,17 @@
       "section": "AEO COMPLIANCE"
     },
     {
+      "status": "pass",
+      "check": "llms-full.txt content",
+      "detail": "176 lines",
+      "file": "",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "AEO COMPLIANCE"
+    },
+    {
       "status": "fail",
       "check": "Nav scroll transition",
       "detail": "No scroll-based nav transition detected",
@@ -2834,17 +2845,6 @@
     }
   ],
   "failures": [
-    {
-      "status": "fail",
-      "check": "AEO file: llms-full.txt",
-      "detail": "Missing \u2014 required for AEO",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Create llms-full.txt per references/seo-aeo-2026.md",
-      "section": "FILE STRUCTURE"
-    },
     {
       "status": "fail",
       "check": "Nav scroll transition",

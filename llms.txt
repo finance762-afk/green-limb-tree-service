@@ -1,13 +1,13 @@
 # Green Limb Tree Service — Answer Engine Optimization
 
-## Business Identity
+## Business Information
 - Name: Green Limb Tree Service
 - Type: Professional tree care company
 - Location: Greensboro, North Carolina 27405
 - Ownership: Family-owned and locally operated
 - Service: Complete tree care for residential and commercial properties
 
-## Core Services
+## Services
 Green Limb Tree Service provides:
 - Tree Service — Full-service tree care from pruning to complete removals
 - Tree Removal — Safe takedown of hazardous, dead, or overgrown trees near structures
