@@ -1,6 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 ?>
 <?php
 /* ── Page-level setup ─────────────────────────────────────────────────────── */
@@ -435,6 +436,71 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   </div>
 </section>
 
+<!-- ═══════════════════════ FROM THE BLOG (v7 — Premium requirement) ═══════════════════════ -->
+<?php if (!empty($blogPosts)): ?>
+<section class="section section--light gl-blog-preview" aria-label="From the blog">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow-label">Expert Advice</span>
+      <h2>From <em style="color:var(--color-accent-dark);font-style:normal">the Blog</em></h2>
+      <p>Practical tree care tips, cost guides, and seasonal advice for Greensboro homeowners.</p>
+    </div>
+
+    <?php $featuredPost = $blogPosts[0]; ?>
+    <article class="blog-featured-card reveal-up" aria-label="<?php echo htmlspecialchars($featuredPost['title']); ?>">
+      <div class="blog-featured-card__image">
+        <?php echo renderPicture($featuredPost['image'], $featuredPost['alt'], 1200, 675, '(max-width: 768px) 100vw, 560px'); ?>
+        <span class="blog-featured-card__badge"><?php echo htmlspecialchars($featuredPost['category']); ?></span>
+      </div>
+      <div class="blog-featured-card__body">
+        <div class="blog-featured-card__meta">
+          <span>
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+            <?php echo htmlspecialchars($featuredPost['date']); ?>
+          </span>
+          <span>
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <?php echo htmlspecialchars($featuredPost['readtime']); ?>
+          </span>
+        </div>
+        <h3><a href="/blog/<?php echo htmlspecialchars($featuredPost['slug']); ?>/"><?php echo htmlspecialchars($featuredPost['title']); ?></a></h3>
+        <p class="blog-featured-card__excerpt"><?php echo htmlspecialchars($featuredPost['excerpt']); ?></p>
+        <a href="/blog/<?php echo htmlspecialchars($featuredPost['slug']); ?>/" class="blog-featured-card__cta">
+          Read article
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <div class="blog-view-all reveal-up" style="text-align: center; margin-top: var(--space-5);">
+      <a href="/blog/" class="btn btn-secondary">
+        View All Articles
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Blog preview featured card — token-only composition */
+.gl-blog-preview { border-top: 2px solid var(--color-line); }
+.blog-featured-card { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(2rem, 4vw, 3.5rem); align-items: center; margin: var(--space-5) 0; }
+.blog-featured-card__image { position: relative; aspect-ratio: 16 / 10; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
+.blog-featured-card__image img, .blog-featured-card__image picture { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease-out); }
+.blog-featured-card:hover .blog-featured-card__image img, .blog-featured-card:hover .blog-featured-card__image picture { transform: scale(1.05); }
+.blog-featured-card__badge { position: absolute; top: var(--space-3); left: var(--space-3); background: var(--color-accent); color: var(--color-white); font-family: var(--font-accent); font-size: var(--fs-small); text-transform: uppercase; letter-spacing: .08em; padding: .35em .8em; border-radius: var(--radius-sm); font-weight: 600; box-shadow: var(--shadow); }
+.blog-featured-card__meta { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2); font-size: var(--fs-small); color: var(--color-muted); font-family: var(--font-accent); letter-spacing: .04em; }
+.blog-featured-card__meta svg { color: var(--color-accent); }
+.blog-featured-card h3 { font-size: var(--fs-h3); line-height: 1.3; margin: var(--space-2) 0; }
+.blog-featured-card h3 a { color: var(--color-ink); transition: color var(--transition); }
+.blog-featured-card h3 a:hover { color: var(--color-primary); }
+.blog-featured-card__excerpt { color: var(--color-ink-2); line-height: 1.6; margin: var(--space-3) 0; }
+.blog-featured-card__cta { display: inline-flex; align-items: center; gap: var(--space-2); font-weight: 600; color: var(--color-primary); font-family: var(--font-accent); letter-spacing: .04em; text-transform: uppercase; font-size: var(--fs-small); transition: gap var(--transition); }
+.blog-featured-card__cta:hover { gap: var(--space-3); }
+@media (max-width: 900px) { .blog-featured-card { grid-template-columns: 1fr; } }
+</style>
+<?php endif; ?>
+
 <!-- ═══════════════════════ ESTIMATE ═══════════════════════ -->
 <section class="section section--light gl-estimate" id="estimate" aria-label="Request a free estimate">
   <div class="container">
@@ -531,5 +597,173 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
   </div>
 </section>
+
+<!-- ═══════════════════════ FROM THE BLOG ═══════════════════════ -->
+<section class="from-blog">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">From the Blog</h2>
+      <p class="section-subtitle">Tree care tips, seasonal guides, and cost breakdowns from the Green Limb crew.</p>
+    </div>
+
+    <?php if (!empty($blogPosts)): ?>
+    <div class="blog-preview-grid">
+      <?php
+      // Featured post (first in registry)
+      $featured = $blogPosts[0];
+      ?>
+      <article class="blog-preview-card blog-preview-card--featured">
+        <div class="blog-preview-image">
+          <?php echo renderPicture($featured['image'], $featured['alt'], 800, 450, '(min-width: 1024px) 620px, 100vw', []); ?>
+        </div>
+        <div class="blog-preview-content">
+          <div class="blog-preview-meta">
+            <span class="blog-category"><?php echo htmlspecialchars($featured['category']); ?></span>
+            <span class="blog-date">
+              <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+              <?php echo htmlspecialchars($featured['date']); ?>
+            </span>
+            <span class="blog-readtime">
+              <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <?php echo htmlspecialchars($featured['readtime']); ?>
+            </span>
+          </div>
+          <h3 class="blog-preview-title">
+            <a href="/blog/<?php echo htmlspecialchars($featured['slug']); ?>/"><?php echo htmlspecialchars($featured['title']); ?></a>
+          </h3>
+          <p class="blog-preview-excerpt"><?php echo htmlspecialchars($featured['excerpt']); ?></p>
+          <a href="/blog/<?php echo htmlspecialchars($featured['slug']); ?>/" class="btn btn-secondary">Read Article</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="blog-preview-cta">
+      <a href="/blog/" class="btn btn-outline">View All Articles
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+    <?php endif; ?>
+  </div>
+</section>
+
+<style>
+/* From the Blog Section */
+.from-blog {
+  padding: 4rem 0;
+  background: var(--color-bg);
+}
+.from-blog .section-head {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+.blog-preview-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.blog-preview-card {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: var(--transition);
+}
+.blog-preview-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+.blog-preview-card--featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.blog-preview-image {
+  position: relative;
+  overflow: hidden;
+}
+.blog-preview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+.blog-preview-card:hover .blog-preview-image img {
+  transform: scale(1.05);
+}
+.blog-preview-content {
+  padding: 2rem;
+}
+.blog-preview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+.blog-category {
+  background: var(--color-accent);
+  color: var(--color-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.blog-date, .blog-readtime {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+.blog-preview-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+.blog-preview-title a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.blog-preview-title a:hover {
+  color: var(--color-primary);
+}
+.blog-preview-excerpt {
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.blog-preview-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+.btn-outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-outline:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .from-blog { padding: 3rem 0; }
+  .blog-preview-card--featured {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .blog-preview-content { padding: 1.5rem; }
+  .blog-preview-title { font-size: 1.25rem; }
+}
+</style>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

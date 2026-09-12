@@ -8,6 +8,9 @@
  * before any output. Do not emit HTML from this file.
  */
 
+/* ── Lucide icon helper ───────────────────────────────────────────────────── */
+require_once __DIR__ . '/icons.php';
+
 /* ── Identity ─────────────────────────────────────────────────────────────── */
 $slug     = 'green-limb-tree-service';           // exact build directory name
 $siteName = 'Green Limb Tree Service';
