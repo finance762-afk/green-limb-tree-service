@@ -9,7 +9,7 @@ $serviceSlug = 'junk-removal';
 $currentPage = 'services';
 
 $pageTitle       = 'Junk & Debris Removal Greensboro NC | Green Limb Tree Service';
-$metaDescription = 'Green Limb Tree Service hauls brush piles, cut log wood, storm debris & yard clutter off Greensboro, NC properties. Loading included, free estimates, 24/7.';
+$pageDescription = 'Green Limb Tree Service hauls brush piles, cut log wood, storm debris & yard clutter off Greensboro, NC properties. Loading included, free estimates, 24/7.';
 $canonicalUrl    = $siteUrl . '/services/junk-removal/';
 
 /* Service-specific FAQ (drives the visible FAQ + FAQPage schema) */

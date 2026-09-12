@@ -9,7 +9,7 @@ $serviceSlug = 'tree-removal';
 $currentPage = 'services';
 
 $pageTitle       = 'Tree Removal Greensboro NC | Green Limb Tree Service';
-$metaDescription = 'Safe tree removal in Greensboro, NC. Green Limb Tree Service takes down hazardous, dead & storm-damaged trees with careful rigging near homes. Free estimates, 24/7 response.';
+$pageDescription = 'Safe tree removal in Greensboro, NC. Green Limb Tree Service takes down hazardous, dead & storm-damaged trees with careful rigging near homes. Free estimates, 24/7 response.';
 $canonicalUrl    = $siteUrl . '/services/tree-removal/';
 
 /* Service-specific FAQ (drives the visible FAQ + FAQPage schema) */

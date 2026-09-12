@@ -16,7 +16,7 @@ $citySlug    = 'high-point-nc';
 $currentPage = 'service-areas';
 
 $pageTitle       = 'Tree Service in High Point, NC | Green Limb Tree Service';
-$metaDescription = 'Professional tree removal, trimming, and storm cleanup in High Point, NC. Serving the Furniture Capital from Eastchester to Oak Hollow. Free estimates, fully insured.';
+$pageDescription = 'Professional tree removal, trimming, and storm cleanup in High Point, NC. Serving the Furniture Capital from Eastchester to Oak Hollow. Free estimates, fully insured.';
 $canonicalUrl    = $siteUrl . '/service-areas/high-point-nc/';
 
 $heroFormTitle = 'Free estimate in High Point';

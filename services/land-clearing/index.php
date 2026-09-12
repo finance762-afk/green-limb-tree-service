@@ -9,7 +9,7 @@ $serviceSlug = 'land-clearing';
 $currentPage = 'services';
 
 $pageTitle       = 'Land Clearing Greensboro NC | Green Limb Tree Service';
-$metaDescription = 'Land clearing in Greensboro, NC for lots, driveways & overgrown acreage. Green Limb Tree Service clears, grinds stumps, hauls debris & grades. Free estimates.';
+$pageDescription = 'Land clearing in Greensboro, NC for lots, driveways & overgrown acreage. Green Limb Tree Service clears, grinds stumps, hauls debris & grades. Free estimates.';
 $canonicalUrl    = $siteUrl . '/services/land-clearing/';
 
 /* Service-specific FAQ (drives the visible FAQ + FAQPage schema) */

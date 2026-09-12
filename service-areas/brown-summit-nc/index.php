@@ -16,7 +16,7 @@ $citySlug    = 'brown-summit-nc';
 $currentPage = 'service-areas';
 
 $pageTitle       = 'Tree Service in Brown Summit, NC | Green Limb Tree Service';
-$metaDescription = 'Tree removal, land clearing, and storm cleanup in Brown Summit, NC. Green Limb Tree Service handles wooded lots and acreage in the rolling countryside northeast of Greensboro.';
+$pageDescription = 'Tree removal, land clearing, and storm cleanup in Brown Summit, NC. Green Limb Tree Service handles wooded lots and acreage in the rolling countryside northeast of Greensboro.';
 $canonicalUrl    = $siteUrl . '/service-areas/brown-summit-nc/';
 
 $heroFormTitle = 'Free estimate in Brown Summit';

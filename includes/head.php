@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php
-    // Every page sets $pageTitle, $metaDescription, $canonicalUrl before including head.php
+    // Every page sets $pageTitle, $pageDescription, $canonicalUrl before including head.php
     $fullTitle = isset($pageTitle) ? $pageTitle : $siteName . ' | ' . $primaryKeyword . ' | ' . $address['city'] . ', ' . $address['state'];
-    $description = isset($metaDescription) ? $metaDescription : 'Professional tree service in ' . $address['city'] . ', ' . $address['state'] . '. ' . $siteName . ' provides expert tree removal, trimming, pruning, and emergency storm cleanup.';
+    $description = isset($pageDescription) ? $pageDescription : 'Professional tree service in ' . $address['city'] . ', ' . $address['state'] . '. ' . $siteName . ' provides expert tree removal, trimming, pruning, and emergency storm cleanup.';
     $canonical = isset($canonicalUrl) ? $canonicalUrl : $siteUrl . $_SERVER['REQUEST_URI'];
     ?>
 

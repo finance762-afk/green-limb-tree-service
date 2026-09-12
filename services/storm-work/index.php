@@ -9,7 +9,7 @@ $serviceSlug = 'storm-work';
 $currentPage = 'services';
 
 $pageTitle       = 'Storm Damage & Emergency Tree Work Greensboro NC | Green Limb Tree Service';
-$metaDescription = '24/7 emergency storm tree removal in Greensboro, NC. Green Limb Tree Service clears trees off homes & drives with insurance-friendly photo documentation.';
+$pageDescription = '24/7 emergency storm tree removal in Greensboro, NC. Green Limb Tree Service clears trees off homes & drives with insurance-friendly photo documentation.';
 $canonicalUrl    = $siteUrl . '/services/storm-work/';
 
 /* Service-specific FAQ (drives the visible FAQ + FAQPage schema) */

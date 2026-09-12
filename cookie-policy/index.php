@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 ?>
 <?php
 $pageTitle       = "Cookie Policy | $siteName";
-$metaDescription = "How $siteName uses cookies and tracking technologies on our website. Learn what cookies we use and how to control them.";
+$pageDescription = "How $siteName uses cookies and tracking technologies on our website. Learn what cookies we use and how to control them.";
 $canonicalUrl    = $siteUrl . '/cookie-policy/';
 $ogImage         = $siteUrl . '/assets/images/logo.png';
 $currentPage     = 'cookie-policy';
@@ -20,7 +20,7 @@ $lastUpdated       = date('F j, Y');
 $schemaGraph = [
     '@context' => 'https://schema.org',
     '@graph' => [
-        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $metaDescription],
+        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $pageDescription],
         ['@type' => 'BreadcrumbList', 'itemListElement' => [
             ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => $siteUrl . '/'],
             ['@type' => 'ListItem', 'position' => 2, 'name' => 'Cookie Policy', 'item' => $canonicalUrl],

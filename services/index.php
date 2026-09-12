@@ -8,7 +8,7 @@ $pageType    = 'service';
 $currentPage = 'services';
 
 $pageTitle       = 'Tree Services in Greensboro, NC | Green Limb Tree Service';
-$metaDescription = 'The full range of tree services in Greensboro, NC from Green Limb Tree Service — tree removal, trimming, pruning, stump grinding, land clearing & 24/7 storm cleanup. Free estimates.';
+$pageDescription = 'The full range of tree services in Greensboro, NC from Green Limb Tree Service — tree removal, trimming, pruning, stump grinding, land clearing & 24/7 storm cleanup. Free estimates.';
 $canonicalUrl    = $siteUrl . '/services/';
 
 /* Services grid (9 services → orphan rule: featured 2x2 first card). Photos and

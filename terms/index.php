@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 ?>
 <?php
 $pageTitle       = "Terms of Service | $siteName";
-$metaDescription = "Terms and conditions governing use of our website and engagement of our tree care services in Greensboro, NC.";
+$pageDescription = "Terms and conditions governing use of our website and engagement of our tree care services in Greensboro, NC.";
 $canonicalUrl    = $siteUrl . '/terms/';
 $ogImage         = $siteUrl . '/assets/images/logo.png';
 $currentPage     = 'terms';
@@ -22,7 +22,7 @@ $lastUpdated       = date('F j, Y');
 $schemaGraph = [
     '@context' => 'https://schema.org',
     '@graph' => [
-        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $metaDescription],
+        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $pageDescription],
         ['@type' => 'BreadcrumbList', 'itemListElement' => [
             ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => $siteUrl . '/'],
             ['@type' => 'ListItem', 'position' => 2, 'name' => 'Terms of Service', 'item' => $canonicalUrl],

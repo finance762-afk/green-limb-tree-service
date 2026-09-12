@@ -17,7 +17,7 @@ $citySlug    = 'graham-nc';
 $currentPage = 'service-areas';
 
 $pageTitle       = 'Tree Service in Graham, NC | Green Limb Tree Service';
-$metaDescription = 'Professional tree removal, trimming, and storm cleanup in Graham, NC. Green Limb Tree Service serves the Alamance County seat from the Historic District to North Main Street. Free estimates.';
+$pageDescription = 'Professional tree removal, trimming, and storm cleanup in Graham, NC. Green Limb Tree Service serves the Alamance County seat from the Historic District to North Main Street. Free estimates.';
 $canonicalUrl    = $siteUrl . '/service-areas/graham-nc/';
 
 $heroFormTitle = 'Free estimate in Graham';

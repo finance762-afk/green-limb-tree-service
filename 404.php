@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $pageType        = 'other';
 $currentPage     = '404';
 $pageTitle       = 'Page Not Found (404) | Green Limb Tree Service';
-$metaDescription = 'This page could not be found. Browse our tree services or contact Green Limb Tree Service in Greensboro, NC.';
+$pageDescription = 'This page could not be found. Browse our tree services or contact Green Limb Tree Service in Greensboro, NC.';
 $canonicalUrl    = $siteUrl . '/404/';
 $noindex         = true;  // Do not index 404 pages
 

@@ -1,0 +1,34 @@
+# robots.txt for Green Limb Tree Service
+# Updated: September 2026
+
+User-agent: *
+Allow: /
+
+# Block non-content directories
+Disallow: /includes/
+Disallow: /assets/js/
+
+# Block thank-you page (noindex, no crawler value)
+Disallow: /thank-you
+
+# Sitemaps
+Sitemap: https://www.greenlimbtreeservice.com/sitemap.xml
+
+# AI Crawlers (explicitly allow for AEO visibility)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /

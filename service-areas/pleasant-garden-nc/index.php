@@ -17,7 +17,7 @@ $citySlug    = 'pleasant-garden-nc';
 $currentPage = 'service-areas';
 
 $pageTitle       = 'Tree Service in Pleasant Garden, NC | Green Limb Tree Service';
-$metaDescription = 'Professional tree removal, trimming, and storm cleanup in Pleasant Garden, NC. Green Limb Tree Service serves Steeple Chase and all neighborhoods south of Greensboro. Free estimates.';
+$pageDescription = 'Professional tree removal, trimming, and storm cleanup in Pleasant Garden, NC. Green Limb Tree Service serves Steeple Chase and all neighborhoods south of Greensboro. Free estimates.';
 $canonicalUrl    = $siteUrl . '/service-areas/pleasant-garden-nc/';
 
 $heroFormTitle = 'Free estimate in Pleasant Garden';

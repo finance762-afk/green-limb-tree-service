@@ -8,7 +8,7 @@ $pageType    = 'other';
 $currentPage = 'service-areas';
 
 $pageTitle       = 'Tree Service Areas in Guilford & Alamance Counties | Green Limb Tree Service';
-$metaDescription = 'Green Limb Tree Service provides tree removal, trimming, pruning, and storm cleanup across Greensboro, High Point, Burlington, and surrounding Piedmont communities.';
+$pageDescription = 'Green Limb Tree Service provides tree removal, trimming, pruning, and storm cleanup across Greensboro, High Point, Burlington, and surrounding Piedmont communities.';
 $canonicalUrl    = $siteUrl . '/service-areas/';
 
 /* Breadcrumb schema */
@@ -150,7 +150,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         [
           'name'  => 'Burlington',
           'slug'  => 'burlington-nc',
-          'desc'  => 'Full-service tree work in Alamance County's largest city, from downtown Burlington to Morgantown and Lakeview.',
+          'desc'  => 'Full-service tree work in Alamance County\'s largest city, from downtown Burlington to Morgantown and Lakeview.',
           'county' => 'Alamance County',
         ],
         [

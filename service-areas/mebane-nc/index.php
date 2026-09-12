@@ -17,7 +17,7 @@ $citySlug    = 'mebane-nc';
 $currentPage = 'service-areas';
 
 $pageTitle       = 'Tree Service in Mebane, NC | Green Limb Tree Service';
-$metaDescription = 'Professional tree removal, trimming, and storm cleanup in Mebane, NC. Green Limb Tree Service serves the "Positively Charming" city from the Historic District to neighborhoods across Alamance and Orange Counties.';
+$pageDescription = 'Professional tree removal, trimming, and storm cleanup in Mebane, NC. Green Limb Tree Service serves the "Positively Charming" city from the Historic District to neighborhoods across Alamance and Orange Counties.';
 $canonicalUrl    = $siteUrl . '/service-areas/mebane-nc/';
 
 $heroFormTitle = 'Free estimate in Mebane';

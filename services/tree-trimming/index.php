@@ -9,7 +9,7 @@ $serviceSlug = 'tree-trimming';
 $currentPage = 'services';
 
 $pageTitle       = 'Tree Trimming Greensboro NC | Green Limb Tree Service';
-$metaDescription = 'Tree trimming in Greensboro, NC. Green Limb Tree Service clears roofs, gutters & power lines, thins canopies for light, and removes deadwood. Free estimates.';
+$pageDescription = 'Tree trimming in Greensboro, NC. Green Limb Tree Service clears roofs, gutters & power lines, thins canopies for light, and removes deadwood. Free estimates.';
 $canonicalUrl    = $siteUrl . '/services/tree-trimming/';
 
 /* Service-specific FAQ (drives the visible FAQ + FAQPage schema) */

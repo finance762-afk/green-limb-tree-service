@@ -4,7 +4,7 @@
  * Green Limb Tree Service | Page One Insights Premium Build
  */
 $pageTitle       = 'When Should You Prune Trees in North Carolina?';
-$metaDescription = 'Most North Carolina trees should be pruned in late winter (January–early March) while dormant. Timing varies by species — oaks carry disease risks when pruned in spring and summer.';
+$pageDescription = 'Most North Carolina trees should be pruned in late winter (January–early March) while dormant. Timing varies by species — oaks carry disease risks when pruned in spring and summer.';
 $canonicalUrl    = $siteUrl . '/blog/when-to-prune-trees-in-north-carolina/';
 $currentPage     = 'blog';
 
@@ -20,7 +20,7 @@ $schemaMarkup = json_encode([
             '@type'            => 'BlogPosting',
             '@id'              => $siteUrl . '/blog/when-to-prune-trees-in-north-carolina/#article',
             'headline'         => 'When Should You Prune Trees in North Carolina?',
-            'description'      => $metaDescription,
+            'description'      => $pageDescription,
             'image'            => $siteUrl . '/assets/images/1000000129-960.webp',
             'datePublished'    => '2026-09-12',
             'dateModified'     => '2026-09-12',

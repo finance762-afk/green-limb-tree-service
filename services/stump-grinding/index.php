@@ -9,7 +9,7 @@ $serviceSlug = 'stump-grinding';
 $currentPage = 'services';
 
 $pageTitle       = 'Stump Grinding Greensboro NC | Green Limb Tree Service';
-$metaDescription = 'Below-grade stump grinding in Greensboro, NC. Green Limb Tree Service clears trip hazards & regrowth for $150-$400 on most residential stumps. Free on-site quotes.';
+$pageDescription = 'Below-grade stump grinding in Greensboro, NC. Green Limb Tree Service clears trip hazards & regrowth for $150-$400 on most residential stumps. Free on-site quotes.';
 $canonicalUrl    = $siteUrl . '/services/stump-grinding/';
 
 /* Service-specific FAQ (drives the visible FAQ + FAQPage schema) */

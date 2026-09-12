@@ -17,7 +17,7 @@ $citySlug    = 'haw-river-nc';
 $currentPage = 'service-areas';
 
 $pageTitle       = 'Tree Service in Haw River, NC | Green Limb Tree Service';
-$metaDescription = 'Professional tree removal, trimming, and storm cleanup in Haw River, NC. Green Limb Tree Service serves western Alamance County along the Haw River corridor. Free estimates.';
+$pageDescription = 'Professional tree removal, trimming, and storm cleanup in Haw River, NC. Green Limb Tree Service serves western Alamance County along the Haw River corridor. Free estimates.';
 $canonicalUrl    = $siteUrl . '/service-areas/haw-river-nc/';
 
 $heroFormTitle = 'Free estimate in Haw River';

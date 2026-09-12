@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $pageType        = 'faq';
 $currentPage     = 'faq';
 $pageTitle       = 'Tree Service FAQ | Green Limb Tree Service Greensboro NC';
-$metaDescription = 'Answers to common questions about tree removal, trimming, pruning, stump grinding, and storm cleanup in Greensboro, NC. Pricing, permits, timing, and safety.';
+$pageDescription = 'Answers to common questions about tree removal, trimming, pruning, stump grinding, and storm cleanup in Greensboro, NC. Pricing, permits, timing, and safety.';
 $canonicalUrl    = $siteUrl . '/faq/';
 
 /* Comprehensive FAQ organized by category */
@@ -100,7 +100,7 @@ $schemaGraph = [
             '@id'   => $canonicalUrl . '#webpage',
             'url'   => $canonicalUrl,
             'name'  => $pageTitle,
-            'description' => $metaDescription,
+            'description' => $pageDescription,
             'isPartOf' => ['@id' => $siteUrl . '/#website'],
             'breadcrumb' => ['@id' => $canonicalUrl . '#breadcrumb'],
         ],

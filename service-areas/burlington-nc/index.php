@@ -17,7 +17,7 @@ $citySlug    = 'burlington-nc';
 $currentPage = 'service-areas';
 
 $pageTitle       = 'Tree Service in Burlington, NC | Green Limb Tree Service';
-$metaDescription = 'Professional tree removal, trimming, and storm cleanup in Burlington, NC. Green Limb Tree Service serves Alamance County from Morgantown to Lakeview and Glencoe. Free estimates.';
+$pageDescription = 'Professional tree removal, trimming, and storm cleanup in Burlington, NC. Green Limb Tree Service serves Alamance County from Morgantown to Lakeview and Glencoe. Free estimates.';
 $canonicalUrl    = $siteUrl . '/service-areas/burlington-nc/';
 
 $heroFormTitle = 'Free estimate in Burlington';

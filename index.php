@@ -8,7 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 $pageType        = 'home';
 $currentPage     = 'home';
 $pageTitle       = 'Tree Service in Greensboro, NC | Green Limb Tree Service';
-$metaDescription = 'Green Limb Tree Service is a family-owned tree service in Greensboro, NC — tree removal, trimming, pruning, stump grinding & 24/7 storm cleanup. Free estimates.';
+$pageDescription = 'Green Limb Tree Service is a family-owned tree service in Greensboro, NC — tree removal, trimming, pruning, stump grinding & 24/7 storm cleanup. Free estimates.';
 $canonicalUrl    = $siteUrl . '/';
 
 /* Hero LCP image (allocator gave the logo as hero; the logo is not a usable

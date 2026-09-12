@@ -9,7 +9,7 @@ $serviceSlug = 'snow-removal';
 $currentPage = 'services';
 
 $pageTitle       = 'Snow & Ice Removal Greensboro NC | Green Limb Tree Service';
-$metaDescription = 'On-call snow & ice clearing for driveways, walkways and access routes in Greensboro, NC. Green Limb Tree Service also clears ice-downed limbs after Piedmont winter storms.';
+$pageDescription = 'On-call snow & ice clearing for driveways, walkways and access routes in Greensboro, NC. Green Limb Tree Service also clears ice-downed limbs after Piedmont winter storms.';
 $canonicalUrl    = $siteUrl . '/services/snow-removal/';
 
 /* Service-specific FAQ (drives the visible FAQ + FAQPage schema) */

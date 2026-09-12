@@ -9,7 +9,7 @@ $serviceSlug = 'tree-pruning';
 $currentPage = 'services';
 
 $pageTitle       = 'Tree Pruning Greensboro NC | Green Limb Tree Service';
-$metaDescription = 'Structural & health pruning for Greensboro, NC trees. Green Limb Tree Service thins, cleans & shapes mature oaks and maples with proper cuts. Free estimates, 24/7.';
+$pageDescription = 'Structural & health pruning for Greensboro, NC trees. Green Limb Tree Service thins, cleans & shapes mature oaks and maples with proper cuts. Free estimates, 24/7.';
 $canonicalUrl    = $siteUrl . '/services/tree-pruning/';
 
 /* Service-specific FAQ (drives the visible FAQ + FAQPage schema) */

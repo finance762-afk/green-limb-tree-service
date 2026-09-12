@@ -4,7 +4,7 @@
  * Green Limb Tree Service | Page One Insights Premium Build
  */
 $pageTitle       = 'How Much Does Tree Removal Cost in Greensboro, NC?';
-$metaDescription = 'Tree removal costs in Greensboro range from $300–$4,500+ depending on tree size, location, and access. Learn what drives pricing and how to get an accurate estimate.';
+$pageDescription = 'Tree removal costs in Greensboro range from $300–$4,500+ depending on tree size, location, and access. Learn what drives pricing and how to get an accurate estimate.';
 $canonicalUrl    = $siteUrl . '/blog/how-much-does-tree-removal-cost-greensboro-nc/';
 $currentPage     = 'blog';
 
@@ -20,7 +20,7 @@ $schemaMarkup = json_encode([
             '@type'            => 'BlogPosting',
             '@id'              => $siteUrl . '/blog/how-much-does-tree-removal-cost-greensboro-nc/#article',
             'headline'         => 'How Much Does Tree Removal Cost in Greensboro, NC?',
-            'description'      => $metaDescription,
+            'description'      => $pageDescription,
             'image'            => $siteUrl . '/assets/images/1000001648-960.webp',
             'datePublished'    => '2026-09-12',
             'dateModified'     => '2026-09-12',

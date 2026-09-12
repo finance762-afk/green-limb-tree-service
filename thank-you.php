@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $pageType        = 'other';
 $currentPage     = 'thank-you';
 $pageTitle       = 'Thank You | Green Limb Tree Service';
-$metaDescription = 'Thank you for contacting Green Limb Tree Service. We\'ll reply within one business day.';
+$pageDescription = 'Thank you for contacting Green Limb Tree Service. We\'ll reply within one business day.';
 $canonicalUrl    = $siteUrl . '/thank-you/';
 $noindex         = true;  // Do not index thank-you pages
 

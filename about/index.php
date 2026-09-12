@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $pageType        = 'about';
 $currentPage     = 'about';
 $pageTitle       = 'About Green Limb Tree Service | Family-Owned Tree Care in Greensboro, NC';
-$metaDescription = 'Meet the Green Limb Tree Service team — a family-owned Greensboro, NC tree care company serving the Piedmont with expert removals, trimming, pruning, and 24/7 storm response.';
+$pageDescription = 'Meet the Green Limb Tree Service team — a family-owned Greensboro, NC tree care company serving the Piedmont with expert removals, trimming, pruning, and 24/7 storm response.';
 $canonicalUrl    = $siteUrl . '/about/';
 
 /* Breadcrumb + WebPage schema */
@@ -23,7 +23,7 @@ $schemaGraph = [
             '@id'   => $canonicalUrl . '#webpage',
             'url'   => $canonicalUrl,
             'name'  => $pageTitle,
-            'description' => $metaDescription,
+            'description' => $pageDescription,
             'isPartOf' => ['@id' => $siteUrl . '/#website'],
             'about' => ['@id' => $siteUrl . '/#organization'],
             'breadcrumb' => ['@id' => $canonicalUrl . '#breadcrumb'],

@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $pageType        = 'contact';
 $currentPage     = 'contact';
 $pageTitle       = 'Contact Green Limb Tree Service | Free Estimates in Greensboro, NC';
-$metaDescription = 'Contact Green Limb Tree Service for a free tree service estimate in Greensboro, NC. Call (336) 254-7993 or fill out our form for same-day response on tree removal, trimming, and storm work.';
+$pageDescription = 'Contact Green Limb Tree Service for a free tree service estimate in Greensboro, NC. Call (336) 254-7993 or fill out our form for same-day response on tree removal, trimming, and storm work.';
 $canonicalUrl    = $siteUrl . '/contact/';
 
 /* Breadcrumb + WebPage schema */
@@ -23,7 +23,7 @@ $schemaGraph = [
             '@id'   => $canonicalUrl . '#webpage',
             'url'   => $canonicalUrl,
             'name'  => $pageTitle,
-            'description' => $metaDescription,
+            'description' => $pageDescription,
             'isPartOf' => ['@id' => $siteUrl . '/#website'],
             'about' => ['@id' => $siteUrl . '/#organization'],
             'breadcrumb' => ['@id' => $canonicalUrl . '#breadcrumb'],

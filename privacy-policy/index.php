@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 ?>
 <?php
 $pageTitle       = "Privacy Policy | $siteName";
-$metaDescription = "How $siteName collects, uses, and protects your information. Privacy practices for our website and contact forms.";
+$pageDescription = "How $siteName collects, uses, and protects your information. Privacy practices for our website and contact forms.";
 $canonicalUrl    = $siteUrl . '/privacy-policy/';
 $ogImage         = $siteUrl . '/assets/images/logo.png';
 $currentPage     = 'privacy-policy';
@@ -22,7 +22,7 @@ $lastUpdated       = date('F j, Y');
 $schemaGraph = [
     '@context' => 'https://schema.org',
     '@graph' => [
-        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $metaDescription],
+        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $pageDescription],
         ['@type' => 'BreadcrumbList', 'itemListElement' => [
             ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => $siteUrl . '/'],
             ['@type' => 'ListItem', 'position' => 2, 'name' => 'Privacy Policy', 'item' => $canonicalUrl],

@@ -15,7 +15,7 @@ $citySlug    = 'greensboro-nc';
 $currentPage = 'service-areas';
 
 $pageTitle       = 'Tree Service in Greensboro, NC | Green Limb Tree Service';
-$metaDescription = 'Professional tree removal, trimming, and storm cleanup in Greensboro, NC. Green Limb Tree Service serves every Greensboro neighborhood—Fisher Park to Lake Brandt. Free estimates.';
+$pageDescription = 'Professional tree removal, trimming, and storm cleanup in Greensboro, NC. Green Limb Tree Service serves every Greensboro neighborhood—Fisher Park to Lake Brandt. Free estimates.';
 $canonicalUrl    = $siteUrl . '/service-areas/greensboro-nc/';
 
 $heroFormTitle = 'Free estimate in Greensboro';

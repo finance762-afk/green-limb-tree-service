@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 ?>
 <?php
 $pageTitle       = "Accessibility Statement | $siteName";
-$metaDescription = "Our commitment to ensuring digital accessibility for people with disabilities. WCAG 2.1 Level AA conformance information.";
+$pageDescription = "Our commitment to ensuring digital accessibility for people with disabilities. WCAG 2.1 Level AA conformance information.";
 $canonicalUrl    = $siteUrl . '/accessibility/';
 $ogImage         = $siteUrl . '/assets/images/logo.png';
 $currentPage     = 'accessibility';
@@ -20,7 +20,7 @@ $lastUpdated       = date('F j, Y');
 $schemaGraph = [
     '@context' => 'https://schema.org',
     '@graph' => [
-        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $metaDescription],
+        ['@type' => 'WebPage', '@id' => $canonicalUrl . '#webpage', 'url' => $canonicalUrl, 'name' => $pageTitle, 'description' => $pageDescription],
         ['@type' => 'BreadcrumbList', 'itemListElement' => [
             ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => $siteUrl . '/'],
             ['@type' => 'ListItem', 'position' => 2, 'name' => 'Accessibility', 'item' => $canonicalUrl],

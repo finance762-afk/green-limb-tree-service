@@ -4,7 +4,7 @@
  * Page One Insights Premium Build
  */
 $pageTitle       = 'Tree Care Blog | Green Limb Tree Service | Greensboro, NC';
-$metaDescription = 'Expert tree care tips, seasonal pruning guides, and cost breakdowns from Green Limb Tree Service — Greensboro\'s family-owned tree service since 2019.';
+$pageDescription = 'Expert tree care tips, seasonal pruning guides, and cost breakdowns from Green Limb Tree Service — Greensboro\'s family-owned tree service since 2019.';
 $canonicalUrl    = $siteUrl . '/blog/';
 $currentPage     = 'blog';
 

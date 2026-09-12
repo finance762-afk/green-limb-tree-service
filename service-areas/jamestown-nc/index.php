@@ -18,7 +18,7 @@ $citySlug    = 'jamestown-nc';
 $currentPage = 'service-areas';
 
 $pageTitle       = 'Tree Service in Jamestown, NC | Green Limb Tree Service';
-$metaDescription = 'Professional tree removal, trimming, and storm cleanup in Jamestown, NC. Green Limb Tree Service serves the historic Quaker community from Mendenhall Homeplace to US-311. Free estimates.';
+$pageDescription = 'Professional tree removal, trimming, and storm cleanup in Jamestown, NC. Green Limb Tree Service serves the historic Quaker community from Mendenhall Homeplace to US-311. Free estimates.';
 $canonicalUrl    = $siteUrl . '/service-areas/jamestown-nc/';
 
 $heroFormTitle = 'Free estimate in Jamestown';
