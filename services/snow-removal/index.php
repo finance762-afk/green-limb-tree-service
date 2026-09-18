@@ -254,7 +254,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
       <div class="sp-breakdown-media reveal-right">
         <div class="about-image-primary">
-          <?php echo renderPicture('bucket-truck-winter-removal', 'Bucket truck removal of a bare winter tree in Greensboro', 720, 620, '(max-width: 900px) 100vw, 460px'); ?>
+          <?php echo renderPicture('snow-removal-bobcat-parking-lot-night', 'Bobcat skid steer clearing snow from a Greensboro parking lot at night', 720, 620, '(max-width: 900px) 100vw, 460px'); ?>
         </div>
       </div>
     </div>
@@ -338,8 +338,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
     <div class="sp-gallery-grid" data-p1-dynamic>
       <figure class="sp-gallery-item reveal-scale">
-        <?php echo renderPicture('crew-truck-log-haul', 'Green Limb truck and trailer hauling cut logs from a Greensboro job', 760, 900, '(max-width: 700px) 100vw, 55vw'); ?>
-        <figcaption>Equipment staged and ready for on-call winter response (no snow shown)</figcaption>
+        <?php echo renderPicture('snow-removal-truck-skid-steer-lot-tall', 'Green Limb truck and skid steer on a trailer at a snow-covered Greensboro lot', 760, 900, '(max-width: 700px) 100vw, 55vw'); ?>
+        <figcaption>Truck and skid steer on site for a Greensboro snow and ice clearing call</figcaption>
       </figure>
       <figure class="sp-gallery-item reveal-scale reveal-delay-1">
         <?php echo renderPicture('chip-truck-fleet', 'Green Limb chip truck and crew on a residential job site', 520, 400, '(max-width: 700px) 100vw, 30vw'); ?>
