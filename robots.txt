@@ -12,7 +12,7 @@ Disallow: /assets/js/
 Disallow: /thank-you
 
 # Sitemaps
-Sitemap: https://www.greenlimbtreeservice.com/sitemap.xml
+Sitemap: https://green-limb.com/sitemap.xml
 
 # AI Crawlers (explicitly allow for AEO visibility)
 User-agent: GPTBot

@@ -36,7 +36,7 @@ $businessHours = '24 hours, Mon–Sat';
  * build-plan.json has no production_domain (its "domain" value is the slug), so
  * $domain defaults to the preview URL "<slug>.pageone.cloud". NEVER blank.
  * Each page sets its own $canonicalUrl from $siteUrl + path before head.php. */
-$domain  = 'green-limb-tree-service.pageone.cloud';
+$domain  = 'green-limb.com';
 $siteUrl = 'https://' . $domain;
 
 /* ── SEO keywords ─────────────────────────────────────────────────────────── */
