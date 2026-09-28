@@ -141,7 +141,7 @@ $elfsightEmbed    = '<div class="elfsight-app-c90fa706-11ab-44c2-a07e-14790c4c37
 $acceptsSms       = false;
 
 /* ── Analytics (placeholder — replaced post-launch) ───────────────────────── */
-$googleAnalyticsId = 'G-XXXXXXXXXX';
+$googleAnalyticsId = 'G-GHJKYMERWR';
 
 /* ── Brand colors ──────────────────────────────────────────────────────────
  * Placeholders pending Phase 0 logo analysis; the authoritative tokens live in
