@@ -154,6 +154,7 @@
             </p>
         </div>
     </div>
+  <?php include __DIR__ . '/partner-badge.php'; ?>
 </footer>
 
 <!-- Estimate Dialog (opened by any [data-open-estimate] — wired in main.js) -->
